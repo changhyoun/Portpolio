@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 폼 제출 기본 동작 방지
+
+            // 입력된 아이디와 비밀번호 가져오기
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // 여기서는 간단히 콘솔에 출력하도록 예시를 들었지만, 실제로는 서버로 전송하고 응답을 처리해야 합니다.
+            console.log('Username:', username);
+            console.log('Password:', password);
+
+            // 실제로는 서버로 아이디와 비밀번호를 전송하여 인증을 처리해야 합니다.
+            // 이후에 사용자를 로그인한 상태로 리다이렉트하거나 세션을 설정할 수 있습니다.
+        });
+    </script>
+</body>
+</html>

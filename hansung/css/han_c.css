@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+h1, h2, h3, h4, h5, h6,p,ul,li{ font-family: "Noto Sans KR", sans-serif; }
+
+
+#container{width: 100%; max-width: 1920px; height: 100%;}
+
+#nav{width: 100%; max-width: 1920px; background-color: rgba(119, 119, 119, 50%); height: 100px; position: fixed; top: 0; left: 0; z-index: 10;}
+
+    #nav_top{width: 100%; height: 50%; border-bottom: 1.5px solid #f5f5f5; display: flex; justify-content: end;}
+        #nav_top .top_bx_warp{width: 40%; display: flex; flex-direction: row; align-items: center; justify-content: space-around; height: 100%;} 
+            #nav_top .top_bx_warp > div{width: 40%; height: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-between;}
+                #nav_top .top_bx_warp > div > div{display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; width: 50%; height: 100%;}
+                    #nav_top .top_bx_warp > div > div p{color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); font-size: 1em;  cursor: pointer;}
+                    #nav_top .top_bx_warp > div > div img{  cursor: pointer;}
+                    #nav_top .top_bx_warp .lag_warp{width: 25%; height: 80%;}
+                    #nav_top .top_bx_warp > div .lag1{width: 46%; border: 1px solid #969696; border-radius: 15px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); cursor: pointer;}
+                    #nav_top .top_bx_warp > div .lag2{width: 46%; border: 1px solid #969696; border-radius: 15px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); cursor: pointer;}
+                    .active{background-color: #1B8BC0; border: 0px;}
+
+                    
+            
+
+    #nav_bottom{width: 100%; height: 50%;}
+
+ #intro{width: 100%; max-width: 1920px; height: 100vh; position: absolute; z-index: 1000; overflow: hidden; top: 0; left: 0; display: none;}
+ #intro img{width: 100%; height: 100%; object-fit: cover; position: relative;  transition: all 2s ease-in-out;}
+     #intro #intro_txbx{position: absolute; top: 51%; left: 50%; transform: translate(-50%,-50%); width: 80%; height: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
+        #intro #intro_txbx h1{font-size: 4em; color: #f5f5f5; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); text-align: center; transition: all 0.7s ease; transform: translateY(-20%); opacity: 0;}
+        #intro #intro_txbx p{font-size: 2em; color: #f5f5f5; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); text-align: center;    font-family: "Kotta One", serif; transition: all 1.5s ease; transform: translateY(20%); opacity: 0;}
+
+
+ #section1{width: 100%; height: 100vh; max-width: 1920px; overflow: hidden; position: relative;}
+    #section1 .swiper-container{width: 100%; height: 100%;}
+    #section1 .swiper-container .swiper-wrapper{width: 100%; height: 100%;} 
+        #section1 .swiper-container .swiper-wrapper img{filter: brightness(90%); transform: scale(1.2);}
+
+    #section1 .mn_slide_txbox{position: absolute; top: 45%; left: 40%; transform: translate(-50%, -50%); width: 60%; height: 30%; display: flex; flex-direction: column; align-items: baseline; justify-content: space-evenly;}
+        #section1 .mn_slide_txbox h1{font-size: 4em; color: #f5f5f5; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);  transition: all 1s ease;;   opacity:1;}
+        #section1 .mn_slide_txbox p{font-size: 1.5em; color: #f5f5f5; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); transition: all 2s ease;   opacity: 1}
+
+        .slide-effect {
+            opacity: 1;
+        }
+
+

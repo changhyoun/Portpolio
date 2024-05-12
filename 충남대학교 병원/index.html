@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>충남대학교 병원</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={2dd2a62d904385b0db3f423a042af454}">
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="slick/slick/slick.js"></script>
+    <script src="js/effect.js"></script>
+
+
+</head>
+<body>
+    <div class="modal"></div>
+    <div class="aside">
+            <div class="aside1">
+                <img src="img/tnb_obj.png">
+                <p><a href=#>충남대병원더보기</a></p>
+            </div>
+            <div class="aside2">
+                <input type="text" placeholder='Search...' maxlength="8">
+                <span class="material-symbols-rounded get">close</span>
+                <span class="material-symbols-rounded ch">search</span>
+            </div>
+            <div class="aside3">
+                <div class="aside3_1">
+                    <ul>
+                        <li class="lv1">
+                             <a href="#">진료안내</a>
+                             <ul class="lv2">
+                                  <li><a href="#">진료과/의료진</a></li>
+                                  <li><a href="#">전문센터</a></li>
+                                  <li><a href="#">클리닉</a></li>
+                                  <li><a href="#">외래진료안내</a></li>
+                                  <li><a href="#">입퇴원안내</a></li>
+                                  <li><a href="#">진료지원</a></li>
+                                  <li><a href="#">알림마당</a></li>
+                                  <li><a href="#">약물이상반응</a></li>
+                             </ul>
+                        </li>
+                        <li class="lv1">
+                            <a href="#">진료예약</a>
+                            <ul class="lv2">
+                                 <li><a href="#">예약안내</a></li>
+                                 <li><a href="#">예약확인</a></li>
+                                 <li><a href="#">증명서발급</a></li>
+                                 <li><a href="#">비급여진료비</a></li>
+                            </ul>
+                       </li>
+                       <li class="lv1">
+                        <a href="#">이용안내</a>
+                        <ul class="lv2">
+                             <li><a href="#">고객지원</a></li>
+                             <li><a href="#">찾아오시는길</a></li>
+                             <li><a href="#">원내배치도</a></li>
+                             <li><a href="#">전화번호안내</a></li>
+                             <li><a href="#">주차안내</a></li>
+                             <li><a href="#">편의시설</a></li>
+                             <li><a href="#">장례식장</a></li>
+                             <li><a href="#">정보공개</a></li>
+                        </ul>
+                   </li>
+                   
+        
+         
+        
+         
+                   </ul>
+                  </div>
+                  
+                  
+                  
+            </div>
+    </div>
+    <div id="container">
+       
+        <nav>
+            <div id="nav1">
+                <ul class="nav1_menu">
+                    <li><a href="#">코로나19 현황</a></li>
+                    <li><a href="#">코로나19 예방 접종</a></li>
+                    <li><a href="#">세종 충남대학교 병원</a></li>
+                    <li><a href="#">충남대학교</a></li>
+                    <li><a href="#">아이행복지기 어린이집</a></li>
+                    <li><a href="#">전문센터</a></li>
+                    <li><a href="#"><img src="img/tnb_obj.png">충남대학교병원 더 보기</a></li>
+                </ul>
+            </div>    
+            <div id="nav2">
+                <div class="logo">
+                    <img src="img/logo.png" alt="충남대학교병원 로고" width="220px">
+                </div>
+                <ul class="nav2_menu">
+                    <li><a href="#">진료안내</a></li>
+                    <li><a href="#">진료예약</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">병원소개</a></li>
+                    <li><a href="#">진료과</a></li>
+                    <li class="nav2_menu_page"><a href="https://www.cnuh.co.kr/home/login.do" target="_blank"><span class="material-symbols-rounded my">person</span> My page</a></li>        
+                    <a href="#"><span class="material-symbols-rounded mn">menu</span></a>
+                </ul>
+                <div class="nav2_menu_1">
+                    <div class="nav2_menu_1_box">
+                        <img src="img/navlogo.png" width="20%">
+                        <div class="nav2_menu_1_box1">
+                            <h1>진료안내</h1>
+                            <div class="nav2_menu_1_box1_box">
+                                <div class="nav2_menu_1_box1_box1_box1">
+                                    <p><a href="#" onclick="return false">전문센터<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_1_box1_box1_box2">
+                                    <p><a href="#" onclick="return false">입원생활안내<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                            </div>
+                            <div class="nav2_menu_1_box1_box2">
+                                <div class="nav2_menu_1_box1_box2_box">
+                                    <div class="nav2_menu_1_box1_box2_box1">
+                                        <p>대표전화</p>
+                                        <p>1599-7123</p>
+                                    </div>
+                                    <div class="nav2_menu_1_box1_box2_box2">
+                                        <p>말로 거는 전화</p>
+                                        <p>1636</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav2_menu_1_box2">
+                            <p><a href="#">진료과/의료진</a></p>
+                            <p><a href="#">전체보기</a></p>
+                            <p><a href="#">전문센터</a></p>
+                            <p><a href="#">전체보기</a></p>
+                            <p><a href="#">클리닉</a></p>
+                            <p><a href="#">암다학제클리닉</a></p>
+                        </div>
+                        <div class="nav2_menu_1_box3">
+                            <p><a href="#">외래진료 안내</a></p>
+                            <p><a href="#">외래진료</a></p>
+                            <p><a href="#">응급진료</a></p>
+                            <p><a href="#">외국인진료</a></p>
+                            <p><a href="#">FAQ</a></p>
+                            <p><a href="#">입/퇴원안내</a></p>
+                            <p><a href="#">입원절차안내</a></p>
+                            <p><a href="#">퇴원절차안내</a></p>
+                            <p><a href="#">입원생활안내</a></p>
+                            <p><a href="#">환자참여방법안내</a></p>
+                        </div>
+                        <div class="nav2_menu_1_box4">
+                            <p><a href="#">진료지원</a></p>
+                            <p><a href="#">의료사회사업</a></p>
+                            <p><a href="#">가정간호</a></p>
+                            <p><a href="#">호스피스</a></p>
+                            <p><a href="#">알림마당</a></p>
+                            <p><a href="#">의약품정보</a></p>
+                            <p><a href="#">알림마당</a></p>
+                            <p><a href="#">의약소식지</a></p>
+                            <p><a href="#">약물이상반응</a></p>
+                            <p><a href="#">건강정보</a></p>
+                            <p><a href="#">전문진료분야</a></p>
+                            <p><a href="#">질환정보</a></p>
+                        </div>
+                        <div class="nav2_menu_1_box5">
+                            <div class="nav2_menu_1_box5_box1"></div>
+                            <p><a href="#">The 51st Anneiversary</a></p>
+                            <p><a href="#">충남대학교병원<br>
+                                개원51주년 웹 역사관을 소개합니다.</a></p>
+                            <div class="nav2_menu_1_box5_box2">
+                                <p><a href="#">개원 51주년 웹 역사관</a></p>
+                                <a href="#"><span class="material-symbols-rounded">login</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="nav2_menu_2">
+                    <div class="nav2_menu_2_box">
+                        <img src="img/navlogo.png" width="20%">
+                        <div class="nav2_menu_2_box1">
+                            <h1>진료예약</h1>
+                            <div class="nav2_menu_2_box1_box">
+                                <div class="nav2_menu_2_box1_box1_box1">
+                                    <p><a href="#" onclick="return false">인터넷예약<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_2_box1_box1_box2">
+                                    <p><a href="#" onclick="return false">종합검진예약<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                            </div>
+                            <div class="nav2_menu_2_box1_box2">
+                                <div class="nav2_menu_2_box1_box2_box">
+                                    <div class="nav2_menu_2_box1_box2_box1">
+                                        <p>전화예약</p>
+                                        <p>1599-7123</p>
+                                    </div>
+                                    <div class="nav2_menu_2_box1_box2_box2">
+                                        <p>어플예약<br>(구글 스토어)</p>
+                                        <img src="img/qr.png" width="15%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav2_menu_2_box2">
+                            <p><a href="#">예약안내</a></p>
+                            <p><a href="#">외래예약</a></p>
+                            <p><a href="#">간편예약</a></p>
+                            <p><a href="#">인터넷진료예약</a></p>
+                            <p><a href="#">종합검진예약</a></p>
+                            <p><a href="#">국가건강검진</a></p>
+                            <p><a href="#">FAQ</a></p>
+                        </div>
+                        <div class="nav2_menu_2_box3">
+                            <p><a href="#">예약확인</a></p>
+                            <p><a href="#">인터넷진료예약확인</a></p>
+                            <p><a href="#">종합검진예약확인</a></p>
+                            <p><a href="#">진료내역 및 예약 조회</a></p>
+                        </div>
+                        <div class="nav2_menu_2_box4">
+                            <p><a href="#">증명서발급</a></p>
+                            <p><a href="#">제증명/진단서 발급</a></p>
+                            <p><a href="#">의무기록사본/CD복사</a></p>
+                            <p><a href="#">국제공인예방접종증명서(황열)</a></p>
+                            <p><a href="#">비급여진료비</a></p>
+                        </div>
+                        <div class="nav2_menu_2_box5">
+                            <div class="nav2_menu_2_box5_box1"></div>
+                            <p><a href="#">The 51st Anneiversary</a></p>
+                            <p><a href="#">충남대학교병원<br>
+                                개원51주년 웹 역사관을 소개합니다.</a></p>
+                            <div class="nav2_menu_2_box5_box2">
+                                <p><a href="#">개원 51주년 웹 역사관</a></p>
+                                <a href="#"><span class="material-symbols-rounded">login</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nav2_menu_3">
+                    <div class="nav2_menu_3_box">
+                        <img src="img/navlogo.png" width="20%">
+                        <div class="nav2_menu_3_box1">
+                            <h1>이용안내</h1>
+                            <div class="nav2_menu_3_box1_box">
+                                <div class="nav2_menu_3_box1_box1_box1">
+                                    <p><a href="#" onclick="return false">오시는 길<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_3_box1_box1_box2">
+                                    <p><a href="#" onclick="return false">원내배치도<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_3_box1_box1_box3">
+                                    <p><a href="#" onclick="return false">전화 번호 안내<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                            </div>
+                            <div class="nav2_menu_3_box1_box2">
+                                <div class="nav2_menu_3_box1_box2_box">
+                                    <div class="nav2_menu_3_box1_box2_box1">
+                                        <p>대표전화</p>
+                                        <p>1599-7123</p>
+                                    </div>
+                                    <div class="nav2_menu_3_box1_box2_box2">
+                                        <p>말로 거는 전화</p>
+                                        <p>1636</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav2_menu_3_box2">
+                            <p><a href="#">고객지원</a></p>
+                            <p><a href="#">자주묻는질문</a></p>
+                            <p><a href="#">고객의소리</a></p>
+                            <p><a href="#">친절직원</a></p>
+                            <p><a href="#">국민제안(정책제안)</a></p>
+                            <p><a href="#">찾아오시는길</a></p>
+                            <p><a href="#">대전인근에서</a></p>
+                            <p><a href="#">대전시내에서</a></p>
+                            <p><a href="#">타지역에서</a></p>
+                            <p><a href="#">원내배치도</a></p>
+                        </div>
+                        <div class="nav2_menu_3_box3">
+                            <p><a href="#">전화번호안내</a></p>
+                            <p><a href="#">본원</a></p>
+                            <p><a href="#">관절염ㆍ재활센터</a></p>
+                            <p><a href="#">업무별연락처</a></p>
+                            <p><a href="#">주차안내</a></p>
+                            <p><a href="#">본원</a></p>
+                            <p><a href="#">관절염ㆍ재활센터</a></p>
+                            <p><a href="#">편의시설</a></p>
+                        </div>
+                        <div class="nav2_menu_3_box4">
+                            <p><a href="#">장례식장</a></p>
+                            <p><a href="#">정보공개</a></p>
+                            <p><a href="#">정보공개</a></p>
+                            <p><a href="#">경영정보공개</a></p>
+                            <p><a href="#">사전정보공개</a></p>
+                            <p><a href="#">정보공개청구</a></p>
+                            <p><a href="#">공무국외여행보고서</a></p>
+                            <p><a href="#">사업실명제</a></p>
+                        </div>
+                        <div class="nav2_menu_3_box5">
+                            <div class="nav2_menu_3_box5_box1"></div>
+                            <p><a href="#">The 51st Anneiversary</a></p>
+                            <p><a href="#">충남대학교병원<br>
+                                개원51주년 웹 역사관을 소개합니다.</a></p>
+                            <div class="nav2_menu_3_box5_box2">
+                                <p><a href="#">개원 51주년 웹 역사관</a></p>
+                                <a href="#"><span class="material-symbols-rounded">login</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="nav2_menu_4">
+                    <div class="nav2_menu_4_box">
+                        <img src="img/navlogo.png" width="20%">
+                        <div class="nav2_menu_4_box1">
+                            <h1>병원소개</h1>
+                            <div class="nav2_menu_4_box1_box">
+                                <div class="nav2_menu_4_box1_box1_box1">
+                                    <p><a href="#" onclick="return false">병원소식<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_4_box1_box1_box2">
+                                    <p><a href="#" onclick="return false">채용공고<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                                <div class="nav2_menu_4_box1_box1_box3">
+                                    <p><a href="#" onclick="return false">행복지기<span class="material-symbols-rounded">bookmarks</span></a></p>
+                                </div>
+                            </div>
+                            <div class="nav2_menu_4_box1_box2">
+                                <div class="nav2_menu_4_box1_box2_box">
+                                    <div class="nav2_menu_4_box1_box2_box1">
+                                        <p>대표전화</p>
+                                        <p>1599-7123</p>
+                                    </div>
+                                    <div class="nav2_menu_4_box1_box2_box2">
+                                        <p>말로 거는 전화</p>
+                                        <p>1636</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav2_menu_4_box2">
+                            <p><a href="#">병원소개</a></p>
+                            <p><a href="#">병원장 인사말</a></p>
+                            <p><a href="#">미션/비전</a></p>
+                            <p><a href="#">현황</a></p>
+                            <p><a href="#">연혁</a></p>
+                            <p><a href="#">조직도</a></p>
+                            <p><a href="#">HI 소개</a></p>
+                            <p><a href="#">시그니처/엠블럼/기타</a></p>
+                        </div>
+                        <div class="nav2_menu_4_box3">
+                            <p><a href="#">병원소식</a></p>
+                            <p><a href="#">보도자료</a></p>
+                            <p><a href="#">언론ㆍ방송</a></p>
+                            <p><a href="#">건강정보동영상</a></p>
+                            <p><a href="#">채용공고</a></p>
+                            <p><a href="#">입찰공고</a></p>
+                            <p><a href="#">행복지기</a></p>
+                        </div>
+                        <div class="nav2_menu_4_box4">
+                            <p><a href="#">홍보동영상</a></p>
+                            <p><a href="#">서비스헌장</a></p>
+                            <p><a href="#">환자권리장전</a></p>
+                            <p><a href="#">고객헌장</a></p>
+                            <p><a href="#">병원윤리강령</a></p>
+                            <p><a href="#">사회공헌헌장</a></p>
+                            <p><a href="#">안정보건경영방침</a></p>
+                            <p><a href="#">공공보건의료</a></p>
+                            <p><a href="#">발전후원회</a></p>
+                        </div>
+                        <div class="nav2_menu_4_box5">
+                            <div class="nav2_menu_4_box5_box1"></div>
+                            <p><a href="#">The 51st Anneiversary</a></p>
+                            <p><a href="#">충남대학교병원<br>
+                                개원51주년 웹 역사관을 소개합니다.</a></p>
+                            <div class="nav2_menu_4_box5_box2">
+                                <p><a href="#">개원 51주년 웹 역사관</a></p>
+                                <a href="#"><span class="material-symbols-rounded">login</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nav2_menu_5">
+                    <img class="navback" src="img/navlogo.png" width="15%">
+                    <div class="nav2_menu_5_box">
+                        <div class="nav2_menu_5_1">
+                            <a href="#"><img src="img/sub1.png"></a>
+                            <p><a>가정의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_2">
+                            <a href="#"><img src="img/sub2.png"></a>
+                            <p><a>감염내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_3">
+                            <a href="#"><img src="img/sub3.png"></a>
+                            <p><a>내분비대사과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_4">
+                            <a href="#"><img src="img/sub4.png"></a>
+                            <p><a>류마티스내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_5">
+                            <a href="#"><img src="img/sub5.png"></a>
+                            <p><a>마취통증의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_6">
+                            <a href="#"><img src="img/sub6.png"></a>
+                            <p><a>방사선종양학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_7">
+                            <a href="#"><img src="img/sub7.png"></a>
+                            <p><a>병리과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_8">
+                            <a href="#"><img src="img/sub8.png"></a>
+                            <p><a>비뇨의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_9">
+                            <a href="#"><img src="img/sub9.png"></a>
+                            <p><a>산부인과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_10">
+                            <a href="#"><img src="img/sub10.png"></a>
+                            <p><a>성형외과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_11">
+                            <a href="#"><img src="img/sub11.png"></a>
+                            <p><a>청소년과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_12">
+                            <a href="#"><img src="img/sub12.png"></a>
+                            <p><a>소화기내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_13">
+                            <a href="#"><img src="img/sub13.png"></a>
+                            <p><a>신경과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_14">
+                            <a href="#"><img src="img/sub14.png"></a>
+                            <p><a>신경외과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_15">
+                            <a href="#"><img src="img/sub15.png"></a>
+                            <p><a>신장내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_16">
+                            <a href="#"><img src="img/sub16.png"></a>
+                            <p><a>심장내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_17">
+                            <a href="#"><img src="img/sub17.png"></a>
+                            <p><a>안과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_18">
+                            <a href="#"><img src="img/sub18.png"></a>
+                            <p><a>영상의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_19">
+                            <a href="#"><img src="img/sub19.png"></a>
+                            <p><a>외과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_20">
+                            <a href="#"><img src="img/sub20.png"></a>
+                            <p><a>외과·유방암·갑상선암</a></p>
+                        </div>
+                        <div class="nav2_menu_5_21">
+                            <a href="#"><img src="img/sub21.png"></a>
+                            <p><a>응급의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_22">
+                            <a href="#"><img src="img/sub22.png"></a>
+                            <p><a>의공학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_23">
+                            <a href="#"><img src="img/sub23.png"></a>
+                            <p><a>이비인후과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_24">
+                            <a href="#"><img src="img/sub24.png"></a>
+                            <p><a>재활의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_25">
+                            <a href="#"><img src="img/sub25.png"></a>
+                            <p><a>정신건강의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_26">
+                            <a href="#"><img src="img/sub26.png"></a>
+                            <p><a>정형외과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_27">
+                            <a href="#"><img src="img/sub27.png"></a>
+                            <p><a>진단검사의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_28">
+                            <a href="#"><img src="img/sub28.png"></a>
+                            <p><a>치과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_29">
+                            <a href="#"><img src="img/sub29.png"></a>
+                            <p><a>통증클리닉</a></p>
+                        </div>
+                        <div class="nav2_menu_5_30">
+                            <a href="#"><img src="img/sub30.png"></a>
+                            <p><a>피부과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_31">
+                            <a href="#"><img src="img/sub31.png"></a>
+                            <p><a>핵의학과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_32">
+                            <a href="#"><img src="img/sub32.png"></a>
+                            <p><a>혈액종양내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_33">
+                            <a href="#"><img src="img/sub33.png"></a>
+                            <p><a>호흡기알레르기내과</a></p>
+                        </div>
+                        <div class="nav2_menu_5_34">
+                            <a href="#"><img src="img/sub34.png"></a>
+                            <p><a>흉부외과</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nav3">
+                <ul class="nav3_menu">
+                    <li><a href="#"><span><strong>Main</strong> services</span><br><p>주요 서비스를<br>안내해드립니다.</p></a></li>
+                    <li><span class="material-symbols-outlined mask">masks</span><a href="#"><br>코로나19 현황</a></li>
+                    <li><span class="material-symbols-outlined schedule">event_available</span><a href="#"><br>진료 예약</a></li>
+                    <li><span class="material-symbols-outlined check">fact_check</span><a href="#"><br>예약 확인</a></li>
+                    <li><span class="material-symbols-outlined search">person_search</span><a href="#"><br>전문의 검색</a></li>
+                    <li><span class="material-symbols-outlined news">feed</span><a href="#"><br>병원 소식</a></li>
+                    <li><span class="material-symbols-outlined road">multiple_stop</span><a href="#"><br>오시는 길</a></li>
+                    <div id="day">
+                        <div id="weather"></div>
+                        <div id="date" ></div>
+                    </div>
+                </ul>
+                <img class="hospital" src="img/8496.png" width="250px">
+            </div>
+        </nav>
+
+        
+        <main>
+            <div id="main1">
+                <button class="slick-prev" type="button">
+                    <img src="img/arrow_left.png" width="200%" alt="Previous">
+                  </button>
+                  <button class="slick-next" type="button">
+                    <img src="img/arrow_right.png" width="200%" alt="Previous">
+                  </button>
+                 
+                  <img src="img/pause.png" id="pausebutton" alt="Pause" width="2.1%">
+                  <img src="img/play.png" id="playbutton" alt="play" width="2.1%">
+                  
+        
+                
+                <div class="back">
+                    <img src="img/background1.png">
+                    <img src="img/background2.png">
+                    <img src="img/background3.png">
+                    <img src="img/background4.png">
+                </div>
+                    <div class="main1_right">    
+                        <div class="search-container">
+                            <input class="zoom-text" type="text" placeholder="궁금한 사항이 있으신가요?" maxlength="8">
+                            <span class="material-symbols-rounded zoom">search</span>
+                        </div>
+                        <div class="text-box">
+                            <p><a href="#" onclick="return false">심폐소생술</a></p>
+                            <p><a href="#" onclick="return false">예약 확인</a></p>
+                            <p><a href="#" onclick="return false">전문의검색</a></p>
+                            <p><a href="#" onclick="return false">예약 문의</a></p>
+                            <p><a href="#" onclick="return false">코로나검진</a></p>
+                            <p><a href="#" onclick="return false">병원비납부</a></p>
+                            <p><a href="#" onclick="return false">고객 센터</a></p>
+                        </div>
+                        <div class="diretor">
+                            <div class="diretor_left"> </div>
+                            <div class="diretor_right">
+                            <h1><a href=# onclick="return false">충남대학교 병원장 조강희</a></h1>
+                            <p><a href="#" onclick="return false"><span class="material-symbols-rounded greeting">boy</span>인사말</a></p>
+                            <p><a href="#" onclick="return false"><span class="material-symbols-rounded award">new_releases</span>병원 수상 이력</a></p>
+                            </div>
+                        </div>
+                        <div class="guide">
+                            <div class="guide_1">
+                                <a href="#"><span class="material-symbols-rounded group">diversity_3</span></a>
+                                <p><a href="#" onclick="return false">조직도</a></p>
+                            </div>
+                            <div class="guide_2">
+                                <a href="#"><span class="material-symbols-rounded floor">stairs</span></a>
+                                <p><a href="#" onclick="return false">층수별 안내</a></p>
+                            </div>
+                            <div class="guide_3">
+                                <a href="#"><span class="material-symbols-rounded room">door_back</span></a>
+                                <p><a href=# onclick="return false">객실 안내</a></p>
+                            </div>
+                            <div class="guide_4">
+                                <span class="material-symbols-rounded guidance">apartment</span>
+                                <a href="#" onclick="return false"><p><a href="#">이용 안내</a></p></a>
+                            </div>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    
+            </div>
+            
+            <div id="main2">
+                <img class="dae1" src="img/dae1.png" width="10%">
+                <img class="dae2" src="img/dae2.png" width="10%">
+                <div class="main2_left"> 
+                    <div class="main2_left_head">
+                        <h1><span>병원은</span>지금</h1>
+                        <p>_ 충남대병원관련한 소식입니다.</p>
+                    </div>
+                    <div class="main2_left_box1">
+                        <div class="box1">
+                            <p><a href="#" onclick="return false">공지사항</a></p>
+                        </div>
+                        <div class="box2">
+                            <p><a href="#" onclick="return false">보도자료</a></p>
+                        </div>
+                        <div class="box3">
+                            <p><a href="#" onclick="return false">채용공고</a></p>
+                        </div>
+                        <div class="box4">
+                            <p><a href="#" onclick="return false">입찰공고</a></p>
+                        </div>
+                    </div>
+                    <div class="main2_left_box2">
+                        <div id="currentDate">
+                            <span id="dayOfWeek" class="dayOfWeek"></span>
+                            <br>
+                            <span id="dateInfo" class="dateInfo"></span>
+                        </div>
+                        <p><a href=# onclick="return false">제24대 조강희 병원장 취임식</a></p>
+                    </div>
+                    <div class="main2_left_box3">
+                        <div class="main2_left_box3_left">
+                            <p><a href="#" onclick="return false">· 근로자의 날·어린이날·부처님 오신 날(대체공휴일) 외래 휴진안내</a></p>
+                            <p><a href="#" onclick="return false">· [공직자의 이해충돌 방지법] 시행 1주년 기념 홍보슬로건 공모전</a></p>
+                            <p><a href="#" onclick="return false">· 제6기 CNUH 대학생 서포터즈 모집 안내</a></p>
+                        </div>
+                        <div class="main2_left_box3_right">
+                            <p><a href="#" onclick="return false">2023.05.12</a></p>
+                            <p><a href="#" onclick="return false">2023.04.24</a></p>
+                            <p><a href="#" onclick="return false">2023.04.04</a></p>
+                        </div>
+                    </div>
+                
+
+                </div>
+                    <div class="main2_right">
+                        <div class="main2_right_box1">
+                            <img src="img/card1.jpg">
+                            <img src="img/card2.jpg">
+                            <img src="img/card3.jpg">
+                            <img src="img/card4.jpg">
+                            <img src="img/card5.jpg">
+            
+                        </div>
+                        <div class="main2_right_box2">
+                            <h1><a href=#>CNUH위클리 카드 뉴스</a></h1>
+                            <p class="main2_right_box2_t1"><a href="#">2023년 5월 넷째 주 소식</a></p>
+                            <div class="main2_right_box2_t2">
+                                <p class="main2_right_box2_t2_t1"><a href="#" onclick="return false">· 제24대 조강희 병원장 취임식 진행</a></p>
+                                <p class="main2_right_box2_t2_t2"><a href="#" onclick="return false">· 감사실, 제1차 고위직 반부패·청렴위원회 및 청렴서약식 개최</a></p>
+                                <p class="main2_right_box2_t2_t3"><a href="#" onclick="return false">· 의생명연구원 임상연구윤리센터, FERCAP 국제 인증 오프닝 미팅 진행</a></p>
+                                <p class="main2_right_box2_t2_t4"><a href="#" onclick="return false">· 마취통증의학과 교수팀, 공동연구논문 마취통증의학 분야 국제학술지 게재</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main3">
+                <div class="main3_left">
+                    <p class="main3_left_tx1"><a href="#" onclick="return false">같 / 이 / 노 / 력 / 해 / 요</a></p>
+                    <p class="main3_left_tx2"><a href="#" onclick="return false">질병 예방 방법 안내</a></p>
+                    <p class="main3_left_tx3"><a href="#" onclick="return false">고객센터 운영시간<span class="material-symbols-outlined time">schedule</span></a></p>
+                    <p class="main3_left_tx4"><a href="#" onclick="return false">06:00 - 1800 [연중무휴]</a></p>
+                </div>
+                <div class="main3_center">
+                    <p class="main3_center_tx1"><a href="#" onclick="return false">심혈관 질환</a></p>
+                    <p class="main3_center_tx2"><a href="#" onclick="return false">암</a></p>
+                    <p class="main3_center_tx3"><a href="#" onclick="return false">당뇨병</a></p>
+                    <p class="main3_center_tx4"><a href="#" onclick="return false">호흡기 질환</a></p>
+                    <p class="main3_center_tx5"><a href="#" onclick="return false">정신건강 문제</a></p>
+                    <p class="main3_center_tx6"><a href="#" onclick="return false">신장 질환</a></p>
+                    <p class="main3_center_tx7"><a href="#" onclick="return false">간 질환</a></p>
+                    <p class="main3_center_tx8"><a href="#" onclick="return false">감염병</a></p>
+                    <p class="main3_center_tx9"><a href="#" onclick="return false">피부 질환</a></p>
+                    
+                    <p class="main3_center_line1"></p>
+                    <p class="main3_center_line2"></p>
+                    <p class="main3_center_line3"></p>
+                    <p class="main3_center_line4"></p>
+                    <p class="main3_center_line5"></p>
+                    <p class="main3_center_line6"></p>
+                    <p class="main3_center_line7"></p>
+                    <p class="main3_center_line8"></p>
+                    <p class="main3_center_line9"></p>
+                </div>
+                <div class="main3_right">
+                    <p><a href="#">종합예방!<br>동영상 보러가기</a></p>
+                    <article></article>
+                    <div class="main3_right_ig1">
+                        <a href="#" onclick="return false"><span class="material-symbols-rounded">arrow_right_alt</span></a>
+                        <img src="img/img1.png" width="30%">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main4">
+                <div class="main4_left">
+                    <p><a href="#"><strong>국민과 함께하는</strong> 충남대학교 병원<span>_여러분들이 있어 충남대학교 병원이 있습니다.</span></a></p>
+                    <div class="main4_left_left_box1">
+                        <div class="main4_left_left_box1_all">
+                            <div class="triangle-right"></div>
+                            <div class="main4_left_left_box1_1">
+                                <img src="img/tnb_obj.png" height="60%">
+                                <div class="main4_left_left_tx1">
+                                    <p><a href="#" onclick="return false">충남대학교 병원</a></p>
+                                    <p><a href="#" onclick="return false">홍보 동영상</a></p>
+                                </div>
+                            </div>
+                            <div class="main4_left_left_box1_2"></div>
+                        </div>    
+                        <div class="main4_left_center">
+                           <video src="img/Hospitalvideo.mp4" muted controls poster="img/promotion.jpg"></video>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="main4_right">
+                    <div class="main4_right_box1">
+                      <p><a href="#"><span>SNS</span> 소통채널</a></p>
+                      <a href="#" onclick="return false"><img src="img/sns1.png" width="27px"></a>
+                      <a href="#" onclick="return false"><img src="img/sns2.png" width="39px"></a>
+                      <a href="#" onclick="return false"><img src="img/sns3.png" width="27px"></a>
+                      <a href="#" onclick="return false"><img src="img/sns4.png" width="39px"></a>
+                    </div>
+                    <div class="main4_right_box2">
+                        <div class="main4_right_box2_t1">
+                            <h2><a href="#" onclick="return false">Magazine</a></h2>
+                            <p><a href="#" onclick="return false">충남대학교 병원 행복지기</a></p>
+                            <p><a href="#" onclick="return false">2023.05월 호</a></p>
+                        </div>
+                        <div class="main4_right_box2_t2">
+                            <img src="img/magagine1.jpg">
+                            <img src="img/magagine2.jpg">
+                            <img src="img/magagine3.jpg">
+                            <img src="img/magagine4.jpg">
+                            <img src="img/magagine5.jpg">
+                        </div>
+                        <div class="main4_right_box2_t3">
+                            <p><a href=# onclick="return false">모든 호 보기 ㅣ 제보하기</a></p>
+                        </div>
+                    </div>
+                    <div class="main4_right_box3">
+                        <div class="main4_right_box3_t1">
+                            <p><span>진료의뢰서란 </span>무엇이고</p>
+                            <p>어떻게 발급받나요?</p>
+                            <h2><a href="#">알아보기</a></h2>
+                        </div>
+                        <div class="main4_right_box3_t2">
+                            <img src="img/how.png" height="90%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer>
+            <div class="footer_box1">
+                <p><a href="#" onclick="return false">진료과 <span class="material-symbols-rounded arrow">expand_less</span></a></p>
+                <p><a href="#" onclick="return false">전문센터 <span class="material-symbols-rounded arrow">expand_less</span></a></p>
+                <p><a href="#" onclick="return false">비급여 진료비</a></p>
+                <p><a href="#" onclick="return false">정보 공개</a></p>
+                <p><a href="#" onclick="return false">고객 현장</a></p>
+            </div>
+            <div class="footer_box2">
+                <div class="footer_box2_left">
+                    <p><a href="#" onclick="return false">˙개인정보 처리방침   ˙사이트맵   ˙찾아오시는 길</a></p>
+                    <p><a href="#" onclick="return false">대표 전화:1599-7123 말로 거는 전화:1636 + “충남대학교 병원”이라고 말해주세요!<br>
+                    (35015)대전광역시 중구 문화로 282 충남대학교 병원 사업자 번호 : 305-82-08811</a></p>
+                </div>
+                <div class="footer_box2_right">
+                    <div class="footer_box2_right_tx1">
+                        <img src="img/footerimg2.png">
+                        <p>보건복지부 인증의료기관<br>
+                            2023.02~2027.02</p>
+                    </div>
+                    <div class="footer_box2_right_tx2">
+                        <img src="img/footerimg1.png">
+                        <p>의료정보 시스템(OCS/EMR)홈페이지<br>
+                            서비스 운영</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_medicaldepartment">
+                <p><a href="#" onclick="return false">가정의학과</a></p>
+                <p><a href="#" onclick="return false">감염내과</a></p>
+                <p><a href="#" onclick="return false">내분비대사내과</a></p>
+                <p><a href="#" onclick="return false">류마티스내과</a></p>
+                <p><a href="#" onclick="return false">마취통증의학과</a></p>
+                <p><a href="#" onclick="return false">방사선종양학과</a></p>
+                <p><a href="#" onclick="return false">병리과</a></p>
+                <p><a href="#" onclick="return false">비뇨의학과</a></p>
+                <p><a href="#" onclick="return false">산부인과</a></p>
+                <p><a href="#" onclick="return false">성형외과</a></p>
+                <p><a href="#" onclick="return false">소아청소년과</a></p>
+                <p><a href="#" onclick="return false">소화기내과</a></p>
+                <p><a href="#" onclick="return false">신경과</a></p>
+                <p><a href="#" onclick="return false">신경외과</a></p>
+                <p><a href="#" onclick="return false">신장내과</a></p>
+                <p><a href="#" onclick="return false">심장내과</a></p>
+                <p><a href="#" onclick="return false">안과</a></p>
+                <p><a href="#" onclick="return false">영상의학과</a></p>
+                <p><a href="#" onclick="return false">외과</a></p>
+                <p><a href="#" onclick="return false">응급의학과</a></p>
+                <p><a href="#" onclick="return false">치과</a></p>
+            </div>
+            <div class="footer_ProfessionalCenter">
+                <p><a href="#" onclick="return false">감마나이프센터</a></p>
+                <p><a href="#" onclick="return false">국제진료센터</a></p>
+                <p><a href="#" onclick="return false">권역 류마티스 및 퇴행성</a></p>
+                <p><a href="#" onclick="return false">관절염센터</a></p>
+                <p><a href="#" onclick="return false">권역심뇌혈관질환센터</a></p>
+                <p><a href="#" onclick="return false">권역응급의료센터</a></p>
+                <p><a href="#" onclick="return false">노인보건의료센터</a></p>
+                <p><a href="#" onclick="return false">대전광역시지역장애인보건의료센터</a></p>
+                <p><a href="#" onclick="return false">대전지역암센터</a></p>
+                <p><a href="#" onclick="return false">대전충전권역의료재활센터</a></p>
+                <p><a href="#" onclick="return false">스포츠의학센터</a></p>
+                <p><a href="#" onclick="return false">의생명연구원</a></p>
+                <p><a href="#" onclick="return false">인공신장실</a></p>
+                <p><a href="#" onclick="return false">임상시험센터</a></p>
+                <p><a href="#" onclick="return false">임상연구윤리센터</a></p>
+                <p><a href="#" onclick="return false">장기이식센터</a></p>
+                <p><a href="#" onclick="return false">전임상실험센터</a></p>
+                <p><a href="#" onclick="return false">조혈모세포이식센터</a></p>
+                <p><a href="#" onclick="return false">종합건강증진센터</a></p>
+                <p><a href="#" onclick="return false">지역의약품안전센터</a></p>
+                <p><a href="#" onclick="return false">진료협력센터</a></p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

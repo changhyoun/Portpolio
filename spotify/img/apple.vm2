@@ -1,0 +1,564 @@
+{
+	"charStyle" : {},
+	"config" : 
+	[
+		{
+			"childs" : 
+			[
+				[]
+			],
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814411650000,
+			"source" : 0,
+			"type" : "MovieObjectTrack"
+		},
+		{
+			"config" : 
+			{
+				"audio" : 
+				{
+					"volume" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"geometry" : 
+				{
+					"alpha" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"anchorX" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 400.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"anchorY" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 300.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"blending" : 
+					{
+						"returnType" : "string",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"value" : "normal"
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"masking" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"rotationZ" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"scaleX" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 1.8
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"scaleY" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 1.8
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"x" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 960.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"y" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 540.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"motionblur" : 
+				{
+					"activated" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"mirror" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : -76,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"root" : 
+				{
+					"localFX" : 
+					{
+						"returnType" : "object",
+						"value" : 
+						[
+							"chromaKey",
+							"crop1",
+							"lut",
+							"crop2",
+							"mosaic"
+						],
+						"valueType" : "fix"
+					}
+				}
+			},
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814375379536,
+			"source" : 0,
+			"type" : "MiniDatabase"
+		},
+		{
+			"config" : 
+			{
+				"source" : 
+				{
+					"duration" : 
+					{
+						"returnType" : "double",
+						"value" : 5.4000000000000004,
+						"valueType" : "fix"
+					},
+					"fps" : 
+					{
+						"returnType" : "double",
+						"value" : 33.333333333333336,
+						"valueType" : "fix"
+					},
+					"height" : 
+					{
+						"returnType" : "double",
+						"value" : 600.0,
+						"valueType" : "fix"
+					},
+					"overload" : 
+					{
+						"returnType" : "double",
+						"value" : 0.11574074074074073,
+						"valueType" : "fix"
+					},
+					"path" : 
+					{
+						"returnType" : "string",
+						"value" : "C:\\Users\\green\\OneDrive\\바탕 화면\\becbca09cc81c9ecd1ce133c836b3f25.gif",
+						"valueType" : "fix"
+					},
+					"reachableLimit" : 
+					{
+						"returnType" : "double",
+						"value" : 1.0,
+						"valueType" : "fix"
+					},
+					"rotation" : 
+					{
+						"returnType" : "double",
+						"value" : 0.0,
+						"valueType" : "fix"
+					},
+					"videoBufferMemory" : 
+					{
+						"returnType" : "double",
+						"value" : 76800000.0,
+						"valueType" : "fix"
+					},
+					"width" : 
+					{
+						"returnType" : "double",
+						"value" : 800.0,
+						"valueType" : "fix"
+					}
+				}
+			},
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814514029760,
+			"resultFrameRectangleHeight" : 600,
+			"resultFrameRectangleWidth" : 800,
+			"source" : 0,
+			"type" : "VideoSource"
+		},
+		{
+			"clipLength" : 86,
+			"clipX" : 0,
+			"cutStart" : 76,
+			"fadeIn" : false,
+			"fadeInTime" : 0.5,
+			"fadeOut" : false,
+			"fadeOutTime" : 0.5,
+			"fx" : 1814375379536,
+			"isOverlap" : false,
+			"isTimeless" : false,
+			"map" : null,
+			"mute" : false,
+			"name" : "video_child0",
+			"pointer" : 1814411323888,
+			"reversePlay" : false,
+			"source" : 1814514029760,
+			"times" : 1.0,
+			"type" : "MovieObject"
+		},
+		{
+			"childs" : 
+			[
+				[
+					1814411323888
+				]
+			],
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814411650208,
+			"source" : 0,
+			"type" : "MovieObjectTrack"
+		},
+		{
+			"childs" : 
+			[
+				[]
+			],
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814411653536,
+			"source" : 0,
+			"type" : "MovieObjectTrack"
+		},
+		{
+			"config" : 
+			{
+				"audio" : 
+				{
+					"volume" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"geometry" : 
+				{
+					"alpha" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"anchorX" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"anchorY" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"blending" : 
+					{
+						"returnType" : "string",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"value" : "normal"
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"masking" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"rotationZ" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"scaleX" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"scaleY" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 1.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"x" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"y" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"motionblur" : 
+				{
+					"activated" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					},
+					"mirror" : 
+					{
+						"returnType" : "double",
+						"value" : 
+						[
+							{
+								"frame" : 0,
+								"motion" : "steady",
+								"value" : 0.0
+							}
+						],
+						"valueType" : "byFrame"
+					}
+				},
+				"root" : 
+				{
+					"localFX" : 
+					{
+						"returnType" : "object",
+						"value" : [],
+						"valueType" : "fix"
+					}
+				}
+			},
+			"fx" : 0,
+			"map" : null,
+			"pointer" : 1814375383888,
+			"source" : 0,
+			"type" : "MiniDatabase"
+		},
+		{
+			"audioTrack" : 1814411650000,
+			"backgroundColor" : 4278190080,
+			"backgroundTransparency" : false,
+			"captionTrack" : 1814411653536,
+			"clipLength" : 0,
+			"clipX" : 0,
+			"cutStart" : 0,
+			"fadeIn" : false,
+			"fadeInTime" : 0.5,
+			"fadeOut" : false,
+			"fadeOutTime" : 0.5,
+			"fx" : 1814375383888,
+			"isOverlap" : false,
+			"isTimeless" : false,
+			"map" : null,
+			"mute" : false,
+			"name" : "vapshion",
+			"pictureHeight" : 1080,
+			"pictureWidth" : 1920,
+			"pointer" : 1814514386272,
+			"projectFPS" : 30,
+			"reversePlay" : false,
+			"source" : 0,
+			"subjectHeight" : 1080,
+			"subjectWidth" : 1920,
+			"subjectX" : 0,
+			"subjectY" : 0,
+			"times" : 1.0,
+			"type" : "MovieObjectContainer",
+			"videoTrack" : 1814411650208,
+			"worldHeight" : 1080,
+			"worldWidth" : 1920
+		}
+	],
+	"version" : 4
+}

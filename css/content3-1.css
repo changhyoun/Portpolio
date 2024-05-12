@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+
+#load {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 1;
+  background: white;
+  z-index: 1000;
+  text-align: center;
+}
+
+#load > img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 10000 !important;
+}
+
+
+#container{width: 100%; height: 100%; overflow: hidden;}
+
+.logo{background: url(../img/porlogo1.png) no-repeat center center; position: fixed; top: 6%; left: 4%; width: 60px; height: 60px; background-size: cover; z-index: 5000;}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+
+  z-index: 100;
+  
+}
+
+.menu-trigger {
+  position: fixed;
+  width: 50px;
+  height: 44px;
+  right: 10%;
+  top: 8%;
+
+  z-index: 100;
+}
+
+.menu-trigger span {
+  position: fixed;
+  right: 10%;
+margin-top: 5%;
+  width: 2%;
+  height: 2px;
+  background-color: #EBEBEB;
+  border-radius: 4px;
+
+  z-index: 100;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 10px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  top: 20px;
+}
+
+/* 2th bar 사라지고,  1st 3rd bar 회전하며 X  */
+
+.menu-trigger.active-1 span:nth-of-type(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.menu-trigger.active-1 span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active-1 span:nth-of-type(3) {
+  transform: translateY(-10px) rotate(45deg);
+}
+
+
+
+#section1{width: 100%; height: 1000px;  position: relative}
+  
+    #section1 img{width: 100%; height: 100%; object-fit: cover;}
+    .section1_tx{width: 20%; height:15.2%; border: 4px solid white; text-align: center; z-index: 100; transition: all 1s ease; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+    .section1_tx p:nth-of-type(1){font-family: 'Noto Sans KR', sans-serif; ; font-size: 3.1em; color: white; font-weight: bold; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); margin-top: 5%; display: none; margin-bottom: 2%;}
+    .section1_tx p:nth-of-type(2){font-family:'Roboto', sans-serif; ; font-size: 1.2em; color: white; font-weight: medium;  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); display: none;}
+.mu {color: white;cursor: pointer;font-size: 1.8em;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); /* 1로 설정하여 요소를 앞으로 가져옴 */ position: absolute; bottom: 5.3%; left: 50%; transform: translateX(-50%);  z-index: 100;}
+.ci{color: white; font-size: 3.5em; font-weight: 100; position: absolute; bottom: 4%;left: 50%; transform: translateX(-50%); text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); cursor:  pointer; }
+
+#section2{height: 600px; background-color: white;  display: flex; align-items: center; justify-content: space-around; position: relative;}
+    #section2 .content1{width: 22%; height: 61.4%;display: flex; flex-direction: row; margin-left: 12%;}
+        #section2 .content1 .co1{display: flex; flex-direction: column; width: 50%;}
+        #section2 .content1 .co1{display: flex; flex-direction: column; width: 50%;}
+       
+
+        #section2 .content1 .co1 p:nth-of-type(5) a,
+        #section2 .content1 .co1 p:nth-of-type(1) a,
+        #section2 .content1 .co1 p:nth-of-type(3) a {font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: bold; color: #BDBDBD;}
+
+        #section2 .content1 .co1 p:nth-of-type(2){margin-top: 5px;}
+        #section2 .content1 .co1 p:nth-of-type(3){margin-top: 33px;}
+        #section2 .content1 .co1 p:nth-of-type(4){margin-top: 5px;}
+        #section2 .content1 .co1 p:nth-of-type(5){margin-top: 33px;}
+        #section2 .content1 .co1 p:nth-of-type(6){margin-top: 5px;}
+
+        #section2 .content1 .co1 p:nth-of-type(6) a{font-weight: 400;}
+
+        #section2 .content1 .co1 p:nth-of-type(6) a,
+        #section2 .content1 .co1 p:nth-of-type(2) a,
+        #section2 .content1 .co1 p:nth-of-type(4) a {font-family: 'Noto Sans KR', sans-serif;  font-size: 1.25em; font-weight: medium; color: #222;}
+
+        #section2 .content1 .co2 p:nth-of-type(7) a,
+        #section2 .content1 .co2 p:nth-of-type(6) a,
+        #section2 .content1 .co2 p:nth-of-type(5) a,
+        #section2 .content1 .co2 p:nth-of-type(4) a{font-family: 'Roboto', sans-serif;  font-size: 1.25em; font-weight: medium; color: #222;}
+        #section2 .content1 .co2 p:nth-of-type(1) a {font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: bold; color: #BDBDBD;}
+        #section2 .content1 .co2 p:nth-of-type(3) a {font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: bold; color: #BDBDBD;}
+
+        #section2 .content1 .co2 p:nth-of-type(2){margin-top: 5px;}
+        #section2 .content1 .co2 p:nth-of-type(3){margin-top: 33px;}
+        #section2 .content1 .co2 p:nth-of-type(4){margin-top: 11px;}
+        #section2 .content1 .co2 p:nth-of-type(5){margin-top: 5px;}
+        #section2 .content1 .co2 p:nth-of-type(6){margin-top: 5px;}
+        #section2 .content1 .co2 p:nth-of-type(7){margin-top: 5px;}
+
+
+       
+
+        #section2 .content1 .co2 p:nth-of-type(2) a{font-family: 'Noto Sans KR', sans-serif;  font-size: 1.25em; font-weight: medium; color: #222;}
+        
+        #section2 .content2{width: 24%; height: 61.4%; white-space: nowrap; margin-right: 12%;}
+         #section2 .content2 p:nth-of-type(1) a{font-family:  'Noto Sans KR', sans-serif;font-size: 2.25em; color: #222; font-weight: bold;}
+         #section2 .content2 p:nth-of-type(2){margin-top: 5%;}
+         #section2 .content2 p:nth-of-type(2) a{font-family:  'Noto Sans KR', sans-serif;font-size: 1em; color: #222; font-weight: medium; line-height: 25px; }
+
+
+         #section2 .content1, .content2{margin-top: 150px;}
+
+         #section3{width: 100%; height: 4500px; background-color: #445d79; display: flex; flex-direction: row; position: relative;}
+         #section3 .content1 img{ width: 35%; top: 30%; }
+         #section3 .content1 .vi{width: 30.7%; height: 39.3%; top: 30.15%; left: 9.6%; overflow: hidden; border-radius: 15px 15px 0 0;}
+         #section3 .content1 video{height: 100%;  top: 0.8%;   position: relative; right: calc(6%);  /* 왼쪽으로 5% 이동하고 10px를 더하는 값으로 계산 */}
+          #section3 p{position: absolute; bottom: 6%; left: 4%;}
+    #section3 a{font-family:  'Noto Sans KR', sans-serif;color: #a9b1a6; opacity: 0.5;}
+        
+        
+         #section3 .content1{width: 50%; height: 100%; display: flex; align-items: center;   justify-content: center;}
+
+         #section3 .content2{width: 50%; height: 100%;  display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
+
+         #section3 .content2 img{margin-right: 10%;}
+
+         #section4{width: 100%; height: 1000px; background-color:#E8E8E8; display: flex; align-items: center; justify-content: center;}
+         #section4 img {
+           
+            object-fit: cover;
+            transform: scaleY(1);
+            transition: transform 0.3s ease; /* 스무스한 애니메이션을 위한 transition 속성 */
+          }
+          
+          #section4.img-scaled {
+            transform: scaleY(0);
+          }
+
+
+          #section5{width: 100%; height: 1000px; position: relative;}
+          #section5 img{object-fit: cover; width: 100%; height: 100%;}
+          #section5 .workview{width: 550px; height: 174px; border: 6px solid #f5f5f5;  position: absolute; transform: translate(-50%,-50%);left: 50%; top: 50%; border-radius: 3px;}
+          #section5 .workview p{text-align: center; line-height: 174px; }
+          #section5 .workview p a{font-family: 'Noto Sans KR', sans-serif;font-size: 3.5em; color: #f5f5f5; font-weight: bold; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); }
+          #section5 .workview .cl{font-size: 1em; vertical-align: middle;}
+
+          #section6{width: 100%; height: 300px; background-color: #222; display: flex; flex-direction: row; justify-content: center;}
+          #section6 p{margin-right: 3%; margin-top: 5%;}
+          #section6 p a{font-family:  'Noto Sans KR', sans-serif; color: #f5f5f5; font-size: 1.5em; font-weight: bold; }
+          #section6 .dw{font-size: 1.3em; color: white; line-height: 55px; margin-top: 88px;}
+
+
+
+
+
+          #section7{width: 100%; height: 1200px; background-color: #222; position: relative;}
+        
+          #section7 p{top: 32%; left: 50% ; transform: translateX(-50%); color: #777; position: absolute; display: flex; flex-direction: column;}
+          #section7 img{width: 100%; height: 100%; object-fit: cover; transform: scale(0.1);}
+    
+/*1440*/
+@media screen and (max-width: 1800px) {
+	.menu-trigger span{width: 2.5%;}
+	.logo{top: 50px; left: 50px;}
+	
+	.menu-trigger{top: 30px; right: 50px;} 
+	.menu-trigger span:nth-of-type(1) {
+	  top: 10px;
+	  right: 50px;
+	}
+	.menu-trigger span:nth-of-type(2) {
+	  top: 20px;
+	  right: 50px;
+	}
+	.menu-trigger span:nth-of-type(3) {
+	  top: 30px;
+	  right: 50px;
+	}
+  #section1_5 img{width: 31%;}
+
+
+  #section2 .content1 .co1 p:nth-of-type(5) a,
+  #section2 .content1 .co1 p:nth-of-type(1) a,
+  #section2 .content1 .co1 p:nth-of-type(3) a{font-size: 0.9em;}
+
+  #section2 .content1 .co1 p:nth-of-type(6) a,
+  #section2 .content1 .co1 p:nth-of-type(2) a,
+  #section2 .content1 .co1 p:nth-of-type(4) a{font-size: 1.25em;}
+
+  #section2 .content1 .co2 p:nth-of-type(7) a,
+  #section2 .content1 .co2 p:nth-of-type(6) a,
+  #section2 .content1 .co2 p:nth-of-type(5) a,
+  #section2 .content1 .co2 p:nth-of-type(4) a,
+  #section2 .content1 .co2 p:nth-of-type(1) a,
+  #section2 .content1 .co2 p:nth-of-type(3) a{font-size: 1em;}
+
+  #section2 .content1 .co2 p:nth-of-type(2) a{font-size: 1.25em;}
+
+  #section2 .content2 p:nth-of-type(1) a{font-size: 2em;}
+
+  #section2 .content2 p:nth-of-type(2) a{font-size: 1em;}
+
+  #section3 .content1{height: 105%;}
+
+  #section3 .content1 video{height: 100%;}
+
+  #section3 .content2 img{width: 55%;}
+
+  #section6 p a{font-size: 1.8em;}
+
+  #section6 .dw{margin-top: 70px;}
+}

@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACOSTE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="laco.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        
+        
+    
+
+
+        /*전체*/
+        
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        a{text-decoration: none; color: #333;}
+        ul{list-style: none;}
+
+        /*메뉴 바 크기 및 로고 사이즈*/
+        nav{width: 1920px; height: 141px; background-color: #282828; position:fixed; z-index: 1000;}
+        nav h1{top:26px; left: 180px; position: absolute;}
+        nav h1 img{width: 100px; height: auto;}
+        /*메뉴 바 사이즈 및 폰트 사이즈 조정*/
+        .menu1{width: 940px; height: 34px;}
+        .menu1 a{text-decoration: none; color: #fff;}
+        .menu1{ position: absolute; top:60px ; left: 485px}
+        .menu1 li{list-style: none; font-family:'Malgun Gothic'; font-weight: bold; font-size: 22px; float: left;  margin-right: 100px; color: #fff; height: 70px; }
+        .menu1 li:nth-child(5){margin-right: 0px;}
+
+        .menu1_1{background-color:white ; border-radius: 0 0 5px 5px; overflow: hidden; position: absolute; top: 141px; width: 1920px; z-index: 1; height: 200px;}
+        .menu1_1 .menu_1,.menu_2,.menu_3,.menu_4,.menu_5{width: 190px; float: left; text-align: center; }
+        .menu1_1 .menu_1{margin-left: 430px;}
+        .menu1_1 .menu_1 li a,.menu_2 li a,.menu_3 li a,.menu_4 li a,.menu_5 li a{ color: #222 ;display: block; padding: 10px 0; font-family: 'Noto Sans KR', sans-serif; font-weight: medium; font-size: 18px;}
+
+        
+        /*메뉴 바 옆 아이콘*/
+        .ic1 img{position: absolute; top: 50px; left: 1580px;}
+        .ic2 img{position: absolute; top: 50px; left: 1650px;}
+        /*메인 1 박스 조정 및 메인 및 1 이미지 조정*/
+        .tanta{width: 1920px; height: 2px; position: absolute; top: 1px;}
+        #mn1{width: 1920px; height:710px ; background-color: #282828; border-top: 1px solid #313131; overflow-x: hidden; position: relative;}
+        .pt1{position: absolute; left: 509px; top: 141px; }
+        .pt2{position: absolute; left:-600px; opacity: 50%; top: 141px;}
+        .pt3{position: absolute; right:-600px; opacity: 50%; top: 141px;}
+        /*메인 1 화살표 버튼*/
+        .ar1{position: absolute; top: 360px; left: 370px;}
+        .ar2{position: absolute; top: 360px; right: 370px;}
+        /*메인 1 페이지 버튼*/
+        .cl1{position: absolute; top: 650px; left: 886px;}
+        .cl2{position: absolute; top:650px; left: 925px;}
+        .cl3{position: absolute; top:650px; left:986px ;}
+        /*메인 1 정지 버튼*/
+        .pause1{position: absolute; top: 648px; left: 1040px;}
+        .pause1 img{width: 12px; height: 14px;}
+        .box1{width: 580px; height: 335px; background-color: white; margin-left: 202px; margin-top: 40px; overflow: hidden; box-shadow: 1px 1px 3px ; }
+        /*메인 2 전체 사이즈 조정*/
+        #mn2{ width: 1920px; height:700px; background-color: #F2F3F7; overflow: hidden;  }
+        /*메인 2 박스1 크기 위치조정*/
+       .box1{width: 580px; height: 335px; background-color: white; margin-left: 201px; margin-top: 60px; box-shadow: 0.5px 0.5px 2px ;overflow-x: hidden;}
+       
+       .box1 h1{margin-top: 40px; margin-left: 36px; font-family:'Malgun Gothic'; font-weight: bold; font-size: 26px; margin-bottom: 31px;}
+       /*메인 2 박스1 박스 4개 크기 및 텍스트 조정*/
+       .box1 .bm1{width: 99px; height: 168px;}
+       .box1 .bm1 li{ width: 99px; height: 28px; background-color: #F2F3F7; border: 1px solid #CCCCCD; margin-left: 35px; list-style: none; text-align: center; margin-bottom: 16px;}
+       .box1 .bm1 li:nth-child(4){margin-bottom: 0;}
+       .box1 .bm1 li a{text-decoration: none; color: #444351; font-family:'Noto Sans KR', sans-serif; font-size: 14px; font-weight: medium; line-height: 28px} 
+        /*메인 2 박스1 옆 텍스트 조정*/
+       .box1 .bm2{width: 430px; height: 166px; float: right; margin-top: -168px;}
+       .box1 .bm2 li{list-style: none; width:430px; height: 28px; margin-left: 12px; text-align: left; margin-bottom: 16px;}
+       .box1 .bm2 li a{text-decoration: none; color: #444351; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: medium; line-height: 28px; ;}
+        /*메인 2 박스2 크기 위치 조정*/
+       .box2{width: 580px; height: 335px; background-color: white; margin-right: 492px; margin-top: -335px; float: right;
+        box-shadow: 0.5px 0.5px 2px ; }
+
+       .box2 h1{margin-top: 40px; margin-left: 36px; font-family:'Malgun Gothic'; font-weight: bold; font-size: 26px; margin-bottom: 31px;}
+       /*메인 2 박스2 박스 4개 크기 및 텍스트 조정*/
+       .box2 .bm1{width: 99px; height: 168px;}
+       .box2 .bm1 li{border: 1px solid red; width: 99px; height: 28px; background-color: #F2F3F7; border: 1px solid #CCCCCD; margin-left: 35px; list-style: none; text-align: center; margin-bottom: 16px;}
+       .box2 .bm1 li:nth-child(4){margin-bottom: 0;}
+       .box2 .bm1 li a{text-decoration: none; color: #444351; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: medium; line-height: 28px ;} 
+        /*메인 2 박스2 옆 텍스트 조정*/
+       .box2 .bm2{width: 430px; height: 166px; float: right; margin-top: -168px;}
+       .box2 .bm2 li{list-style: none; width:430px; height: 28px; margin-left: 12px; text-align: left; margin-bottom: 16px;}
+       .box2 .bm2 li a{text-decoration: none; color: #444351; font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: medium; line-height: 28px; ;}
+       /*메인 2 박스 3(브로셔) 크기 위치 조정*/
+       .box3{width: 240px; height: 450px; background-color: #3F6D5A; overflow: hidden; float: right; margin-right: 220px; margin-top: -335px; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);}
+        /*메인 2 박스 3(브로셔) 텍스트 및 그림 위치 크기 조정*/
+       .box3 h1{font-family:'Roboto', sans-serif; font-weight: bold; font-size: 36px; color: #FEFDFE; text-align: center;margin-top: 45px; }
+       .box3 p{font-family:'Roboto', sans-serif; font-weight: bold; font-size: 16px; color: #FEFDFE; text-align: center; margin-top:21px;}
+       .box3 img{ margin-top: 40px; align-items: center; margin-left: 10px;}
+        /*메인 2 박스 4 크기 위치 조정*/
+       .box4{width: 1228px; height: 84px; background-color: #fff; margin-top: 30px; margin-left: 201px; border:0.5px 0.5px 2px; box-shadow: 0.5px 0.5px 2px ;}
+        /*메인 2 박스 4 텍스트 크기 위치 조정*/
+       .box4 h1{font-family: 'Malgun Gothic'; font-size: 16px; font-weight: bold; color: #252525; line-height: 84px;margin-left:36px;}
+       .box4 p{float: right; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: medium; color: #A5A3AE; margin-top:-52px; margin-right: 35px;}/*나중에 박스2,3메뉴바 위로 정렬되면 line-heinght 주기*/
+        /*메인 3 크기 조정*/
+       #mn3{height: 933px; width: 1920px; background-color: #fff; overflow: hidden; overflow-x: hidden;}
+       /*메인 3 텍스트 크기 위치 조정*/
+       #mn3 .da{margin-left: 201px; margin-top: 232px; font-family: 'Roboto', sans-serif; font-size:42px; font-weight: bold;
+                color: #007b49;}
+       #mn3 .st{width: 276px; height: 140px;color: #444444;font-family: 'Roboto', sans-serif;font-weight: bold;font-size: 64px; line-height: 70px; margin-top: -4px; margin-left: 201px;}
+       /*메인 3 박스 1 크기 조정 및 텍스트 크기 위치 조정*/
+       #mn3 .cbox1{width: 245px; height: 60px; background-color: #007b49; border-radius: 30px; margin-left: 205px; margin-top: 30px;}
+       #mn3 .cbox1 .cbox1_1{font-family: 'Noto Sans KR', sans-serif;font-style: normal;font-weight: 700;font-size: 20px; line-height: 27px; color: #FDFDFB; margin-left: 27px;line-height: 60px;}
+       #mn3 .cbox1 .cbox1_2{font-family: 'Noto Sans KR', sans-serif;font-style: normal;font-weight: 700;font-size: 18px;
+       line-height: 60px; color: #FDFDFB; margin-right: 32px; float: right; margin-top:-60px ;}
+       /*메인 3 박스 2 크기 조정 및 텍스트 크기 위치 조정*/
+       #mn3 .cbox2{
+        width: 245px;height: 60px;border: 2px solid #CCCCCC;border-radius: 30px; margin-top: 30px; 
+        margin-left: 205px ;}
+        #mn3 .cbox2 .cbox2_1{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: -0.1em;
+            color: #444444;
+            margin-left: 27px;
+            line-height: 60px;
+        }
+        #mn3 .cbox2 .cbox2_2{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: #444444;
+            margin-right: 32px;
+            float: right;
+            margin-top: -44px;
+        }
+         /*메인 3 박스 3 크기 조정 및 텍스트 크기 위치 조정*/
+        #mn3 .cbox3{ width: 245px;height: 60px;border: 2px solid #CCCCCC;border-radius: 30px; margin-top: 30px; 
+        margin-left: 205px ;}
+        #mn3 .cbox3 .cbox3_1{  font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: -0.1em;
+            color: #444444;
+            margin-left: 27px;
+            line-height: 60px;}
+        #mn3 .cbox3 .cbox3_2{ font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #444444;
+            margin-right: 32px;
+            float: right;
+            margin-top: -44px;}
+            
+            /*메인 3 박스 4 크기 조정 및 텍스트 크기 위치 조정*/
+        #mn3 .cbox4{ width: 245px;height: 60px;border: 2px solid #CCCCCC;border-radius: 30px; margin-top: 30px; 
+        margin-left: 205px ;}
+        #mn3 .cbox4 .cbox4_1{  font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: -0.1em;
+            color: #444444;
+            margin-left: 27px;
+            line-height: 60px;}
+        #mn3 .cbox4 .cbox4_2{ font-family: 'Noto Sans KR', sans-serif;
+            font-weight: normal;
+            font-size: 18px;
+            color: #444444;
+            margin-right: 32px;
+            float: right;
+            margin-top: -44px;}
+
+            .map_search{width: 121px; height: 39px; background-color: #FFFFFF; box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.25) inset ;  position: absolute; top: 1661px; left: 1565px; border-radius: 30px; }
+            .map_search_t1{ font-family:'Noto Sans KR', sans-serif;font-size: 16px; font-weight: medium; margin-left: 38.5px; margin-top: 2px; color: #333; }
+            .map_search_t2{  font-family:'Noto Sans KR', sans-serif;font-size: 10px; font-weight: medium;margin-left: 38px; margin-top: -5px; color: #B6B6B6; }
+            .map_search_t3{ color: #d6d6d6; position: absolute; top: 5px; left: 85px; cursor: pointer;}
+            .map_search_t3 img{ width: 30px; height: 30px;}
+
+            .map_search_down{width: 136px; height: 180px; background-color: #FFFFFF; box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.25) inset; position: absolute; top: 1710px; left: 1565px; border-radius: 20px; z-index: 500; overflow: scroll; overflow-x: hidden;}
+            .map_search_down1{width: 121px; height: 30px; margin-top: 15px;}
+            .map_search_down1_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down1_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down1_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down1_4{float: left; width: 15px; height: 15px; line-height: 30px; margin-top: 7px; position: absolute; right: 9px; cursor: pointer;}
+
+            .map_search_down2{width: 121px; height: 30px; margin-top: 8px;}
+            .map_search_down2_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down2_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down2_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down2_4{float: left; width: 15px; height: 15px; line-height: 30px;  margin-top: 7px; position: absolute; right: 9px; cursor: pointer;}
+
+            .map_search_down3{width: 121px; height: 30px; margin-top: 8px;}
+            .map_search_down3_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down3_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down3_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down3_4{float: left; width: 15px; height: 15px; line-height: 30px;  margin-top: 7px; position: absolute; right: 9px;}
+
+            .map_search_down4{width: 121px; height: 30px; margin-top: 8px;}
+            .map_search_down4_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down4_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down4_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down4_4{float: left; width: 15px; height: 15px; line-height: 30px;  margin-top: 7px; position: absolute; right: 9px;}
+
+            .map_search_down5{width: 121px; height: 30px; margin-top: 8px;}
+            .map_search_down5_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down5_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down5_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down5_4{float: left; width: 15px; height: 15px; line-height: 30px;  margin-top: 7px; position: absolute; right: 9px;}
+
+            .map_search_down6{width: 121px; height: 30px; margin-top: 8px;}
+            .map_search_down6_1{background-color: #D9D9D9; width: 5px; height: 5px; border-radius: 50%; margin-top: 12px; margin-left: 10px; float: left;}
+            .map_search_down6_2{font-family:'Noto Sans KR', sans-serif; font-size: 16px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #333;}
+            .map_search_down6_3{font-family:'Noto Sans KR', sans-serif; font-size: 10px; font-weight: medium; float: left; margin-left: 5px; text-align: center; line-height: 28px; color: #B6B6B6;}
+            .map_search_down6_4{float: left; width: 15px; height: 15px; line-height: 30px;  margin-top: 7px; position: absolute; right: 9px;}
+
+            .tlm{width: 700px; height: 700px;position: relative; top: -610px; left: 600px;}
+            .tlm1 h1{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: bold; position: absolute; z-index: 100; top: 260px; left: 170px; color: #505050; cursor: pointer;}
+            .tlm1 p{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: medium; border-radius: 30px; width: 66px; height: 31px; background-color: #5B5B5B; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset; color: white; cursor: pointer; position: absolute; top: 300px; left: 170px; line-height: 31px; text-align: center;} 
+
+            .tlm2 h1{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: bold; position: absolute; z-index: 100; top: 450px; left:320px ;color: #505050; cursor: pointer;}
+            .tlm2 p{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: medium; border-radius: 30px; width: 66px; height: 31px; background-color: #5B5B5B; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset; color: white; cursor: pointer; position: absolute; top: 490px; left: 310px; line-height: 31px; text-align: center;} 
+
+            .tlm3 h1{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: bold; position: absolute; z-index: 100; top: 180px; left: 360px; color: #505050; cursor: pointer;}
+            .tlm3 p{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: medium; border-radius: 30px; width: 66px; height: 31px; background-color: #5B5B5B; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset; color: white; cursor: pointer; position: absolute; top: 220px; left: 360px; line-height: 31px; text-align: center;} 
+
+            .tlm4 h1{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: bold; position: absolute; z-index: 100; top: 490px; left:180px ;color: #505050; cursor: pointer;}
+            .tlm4 p{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: medium; border-radius: 30px; width: 66px; height: 31px; background-color: #5B5B5B; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset; color: white; cursor: pointer; position: absolute; top: 530px; left: 170px; line-height: 31px; text-align: center;} 
+
+            .tlm5 h1{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: bold; position: absolute; z-index: 100; top: 370px; left:430px ;color: #505050; cursor: pointer;}
+            .tlm5 p{font-size: 24px; font-family:'Noto Sans KR', sans-serif; font-weight: medium; border-radius: 30px; width: 66px; height: 31px; background-color: #5B5B5B; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset; color: white; cursor: pointer; position: absolute; top: 410px; left: 420px; line-height: 31px; text-align: center;} 
+
+
+            
+            
+            
+            .tx1 .tx1_1{
+            /* 유성구 입주공간 */
+
+            top: 1729px;
+            left: 1347px;
+            position: absolute;
+            width: 148px;
+            height: 27px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            /* identical to box height */
+            color: #25252C;
+            }
+
+           
+
+            .tx1 .tx1_2{
+            /* 14 */
+
+            top: 1729px;
+            left: 1475px;
+            position: absolute;
+            width: 24px;
+            height: 27px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            /* identical to box height */
+            color: #007b49}
+
+        
+
+             /* 자세히 */
+
+             .tx1 .tx1_3{
+            position: absolute;
+            top: 1734px;
+            left: 1653px;
+            width: 36px;
+            height: 16px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .line1_1{
+            /* Rectangle 16 */
+
+
+            position: absolute;
+            top: 1775px;
+            left: 1347px;
+            width: 342px;
+            height: 3px;
+
+            background: #25252C;
+            
+            
+
+            }
+            .tx{width: 342px; height: 460px; position: absolute; top: 1781px; left: 1348px;overflow-y: auto;  overflow-x:hidden; }
+            .tx p{text-overflow: ellipsis;white-space:nowrap; overflow: hidden;}
+
+            .stx{width: 342px; height: 460px; position: absolute; top: 1781px; left: 1348px;overflow-y: auto;  overflow-x:hidden; }
+            .stx p{text-overflow: ellipsis;white-space:nowrap; overflow: hidden;}
+
+            .ttx{width: 342px; height:460px; position: absolute; top: 1781px; left: 1348px;overflow-y: auto;  overflow-x:hidden; }
+            .ttx p{text-overflow: ellipsis;white-space:nowrap; overflow: hidden;}
+
+            .ftx{width: 342px; height: 460px; position: absolute; top: 1781px; left: 1348px;overflow-y: auto;  overflow-x:hidden; }
+            .ftx p{text-overflow: ellipsis;white-space:nowrap; overflow: hidden;}
+            
+            
+            /* 스크롤바 설정*/
+            .tx::-webkit-scrollbar{
+                width: 5px;
+            }
+
+            /* 스크롤바 막대 설정*/
+            .tx::-webkit-scrollbar-thumb{
+                background-color: #999;
+                /* 스크롤바 둥글게 설정    */
+                border-radius: 10px;}    
+                .tx::-webkit-scrollbar-track {
+                background-color: #e4e4e4;
+                border-radius: 100px;}
+
+
+            .tx2 .tx2_1{
+                /*LACOSTE 대전 대리점 */
+
+            top:20px;
+            left: 42px; 
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .stx2 .stx2_1{
+                /*LACOSTE 롯데대전 남성 */
+
+            top:20px;
+            left: 42px; 
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .ttx2 .ttx2_1{
+                /*LACOSTE 롯데대전 우먼 */
+
+            top:20px;
+            left: 42px; 
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+            
+            .ftx2 .ftx2_1{
+                /*LACOSTE 갤러리아타임월드 키즈 */
+
+            top:20px;
+            left: 42px; 
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .tx2 .tx2_2{
+            /* 대전 중구 대종로 480번길 54 */
+
+            left: 42px;
+            top: 45px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .stx2 .stx2_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층 */
+
+            left: 42px;
+            top: 45px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .ttx2 .ttx2_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층 */
+
+            left: 42px;
+            top: 45px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .ftx2 .ftx2_2{
+            /*대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈 */
+
+            left: 42px;
+            top: 45px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx2 .tx2_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 21px;
+            }
+
+            .stx2 .stx2_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 21px;
+            }
+
+            .ttx2 .ttx2_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 21px;
+            }
+            .ftx2 .ftx2_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 21px;
+            }
+
+            .tx3 .tx3_1{
+            /* LACOSTE 롯데대전 우먼 */
+
+            position: absolute;
+            top:83px;
+            left: 42px;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;
+        }
+
+         .stx3 .stx3_1{
+            /* LACOSTE 갤러리아타임월드 남성 */
+
+            position: absolute;
+            top:83px;
+            left: 42px;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;
+        }
+
+        .ttx3 .ttx3_1{
+            /* LACOSTE 신세계대전 우먼 */
+
+            position: absolute;
+            top:83px;
+            left: 42px;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;
+        }
+
+        .tx3 .tx3_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층 */
+
+            left: 42px;
+            top: 108px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .stx3 .stx3_2{
+            /* 대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층 */
+
+            left: 42px;
+            top: 108px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .ttx3 .ttx3_2{
+            /* 대전시 유성구 엑스포로 17 신세계백화점 대전점 3층 */
+
+            left: 42px;
+            top: 108px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx3 .tx3_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 85px;
+            }
+
+            .stx3 .stx3_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 85px;
+            }
+
+            .ttx3 .ttx3_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 85px;
+            }
+
+            .tx4 .tx4_1{
+            /* LACOSTE 롯데대전 남성 */
+
+            top: 146px;
+            left:42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .stx4 .stx4_1{
+            /*  LACOSTE 신세계대전 남성 */
+
+            top: 146px;
+            left:42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .ttx4 .ttx4_1{
+            /*LACOSTE 갤러리아타임월드 우먼 */
+
+            top: 146px;
+            left:42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .tx4 .tx4_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층 */
+
+            left: 42px;
+            top: 171px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .stx4 .stx4_2{
+            /* 대전시 유성구 엑스포로 17 (도룡동) */
+
+            left: 42px;
+            top: 171px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .ttx4 .ttx4_2{
+            /* 대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층 */
+
+            left: 42px;
+            top: 171px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+            
+            .tx4 .tx4_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 149px;
+            }
+
+            .stx4 .stx4_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 149px;
+            }
+
+            .ttx4 .ttx4_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 149px;
+            }
+
+            .tx5 .tx5_1{
+            /* LACOSTE 현대대전 아울렛 */
+            
+            top: 209px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .ttx5 .ttx5_1{
+            /* LACOSTE 롯데대전 우먼 */
+            
+            top: 209px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+
+            .tx5 .tx5_2{
+            /* 대전광역시 유성구 테크노중앙로 123 (용산동) */
+
+            left: 42px;
+            top: 234px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .ttx5 .ttx5_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층 */
+
+            left: 42px;
+            top: 234px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx5 .tx5_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 213px;
+            }
+
+            .ttx5 .ttx5_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 213px;
+            }
+
+            .tx6 .tx6_1{
+            /* LACOSTE SPORT 신세계대전 스포츠 */
+            
+            top: 272px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+            
+            .tx6 .tx6_2{
+            /* 대전시 유성구 엑스포로 17 */
+
+            top: 297px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx6 .tx6_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 277px;
+            }
+
+
+            .tx7 .tx7_1{    
+            /* LACOSTE 신세계대전 우먼 */
+
+            top: 335px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #252525;}
+
+            .tx7 .tx7_2{
+            /* 대전시 유성구 엑스포로 17 신세계백화점 대전점 3층 */
+
+            left: 42px;
+            top: 360px;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx7 .tx7_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 341px;
+            }
+
+
+            .tx8 .tx8_1{
+            /*LACOSTE 갤러리아타임월드 우먼 */
+
+            top: 398px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx8 .tx8_2{
+            /* 대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층 */
+
+            left: 42px;
+            top: 423px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx8 .tx8_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 405px;
+            }
+
+            .tx9 .tx9_1{
+            /*LACOSTE 갤러리아타임월드 남성 */
+
+            top: 461px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx9 .tx9_2{
+            /* 대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층*/
+
+            left: 42px;
+            top: 486px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx9 .tx9_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 469px;
+            }
+
+            .tx10 .tx10_1{
+            /*LACOSTE 롯데대전 우먼 */
+
+            top: 524px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx10 .tx10_2{
+            /* 대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층 */
+
+            left: 42px;
+            top: 549px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx10 .tx10_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 533px;
+            }
+            .tx11 .tx11_1{
+            /*LACOSTE 신세계대전 남성 */
+
+            top: 587px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx11 .tx11_2{
+            /*대전시 유성구 엑스포로 17 (도룡동) */
+
+            left: 42px;
+            top: 612px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx11 .tx11_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 597px;
+            }
+            .tx12 .tx12_1{
+            /*LACOSTE 갤러리아타임월드 키즈 */
+
+            top: 650px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx12 .tx12_2{
+            /* 대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈 */
+
+            left: 42px;
+            top: 675px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx12 .tx12_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 661px;
+            }
+            
+            .tx13 .tx13_1{
+            /*LACOSTE 갤러리아타임월드 스포츠 */
+
+            top: 713px;
+            left: 42px;
+            position: absolute;
+            width: 300px;
+            height: 19px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #252525;}
+
+            .tx13 .tx13_2{
+            /* 대전광역시 서구 대덕대로 211 갤러리아타임월드백화점 8층 */
+
+            left: 42px;
+            top: 738px ;
+            position: absolute;
+            width: 300px;
+            height: 16px;
+
+            font-family: 'Malgun Gothic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+            color: #949294;}
+
+            .tx13 .tx13_3 img{
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 8px;
+                top: 725px;
+            }
+
+
+            .line1_2{
+            /* Line 1 */
+
+            left: 1350px;
+            top: 2249px;
+            position: absolute;
+            width: 337px;
+            height: 0px;
+
+            border: 1px solid #E8E8E8;
+            }
+
+            /*메인 3 지도 이미지 위치 조정*/
+            .mp{position: absolute;
+            top: 1650px;
+            left: 627px;}
+            /*메인 2.5 크기 위치 조정*/
+            #mn25{
+            top: 1280px;
+            left: 201px;
+            position: absolute;
+            width: 1499px;
+            height: 261px;
+
+            background: #FFFFFF;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);} 
+            #mn25 img{width:261px;
+                height: 261px;}
+            #mn25 .a1_1{
+                /* 01 ㅣ */
+            top: 54px;
+            left: 303px;
+            position: absolute;
+            
+            width: 36px;
+            height: 20px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            /* identical to box height */
+
+            letter-spacing: -0.05em;
+
+            color: #1CBC76;
+            }
+            #mn25 .a1_2{
+                position: absolute;
+                left: 345px;
+                top: 49px;
+                height: 45px;
+
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                width: 150px;
+                
+                color: #252326;
+            }
+            #mn25 .a1_3{
+                position: absolute;
+                left: 343px;
+                top: 120px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height */
+
+                letter-spacing: -0.05em;
+
+                color: #828282;}
+
+            #mn25 .a1_4{
+                position: absolute;
+                left: 340px;
+                top: 142px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 64px;
+                /* identical to box height */
+
+                letter-spacing: -0.05em;
+
+                color: #424443;}
+            #mn25 .a1_4 span{font-size: 24px;}
+            
+            #mn25 .a2_1{
+                /* 01 ㅣ */
+            top: 54px;
+            left: 595px;
+            position: absolute;
+            
+            width: 36px;
+            height: 20px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            /* identical to box height */
+
+            letter-spacing: -0.05em;
+
+            color: #1CBC76;}
+            #mn25 .a2_2{
+            position: absolute;
+            left: 637px;
+            top: 49px;
+            width: 170px;
+            height: 63px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+           
+
+            color: #252326;
+            }
+            #mn25 .a2_3{
+            position: absolute;
+            left: 637px;
+            top: 120px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.05em;
+            color: #828282;
+            }
+            #mn25 .a2_4{
+                /* 26.6% */
+            position: absolute;
+
+            left: 634px;
+            top: 142px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 64px;
+            /* identical to box height */
+
+            letter-spacing: -0.05em;
+
+            color: #424443;
+            }
+            #mn25 .a2_4 span{font-size: 24px;}
+                
+            #mn25 .a3_1{
+                position: absolute;
+                left: 887px;
+                top: 54px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                /* identical to box height */
+
+                letter-spacing: -0.05em;
+
+                color: #1CBC76;
+            }
+            #mn25 .a3_2{
+                position: absolute;
+                left: 929px;
+                top: 49px;
+                height: 45px;
+
+                font-family: 'Noto Sans KR', sans-serif;
+              
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                width: 150px;
+                
+                color: #252326;
+            }
+            #mn25 .a3_3{
+                /* 17개 시도 중 11번째 */
+                position: absolute;
+                left: 929px;
+                top: 120px;
+
+                font-family: 'Noto Sans KR', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height */
+
+                letter-spacing: -0.05em;
+
+                color: #828282;
+            }
+            #mn25 .a3_4{
+                /* 5.3천개소 */
+            top: 142px;
+            left: 926px;
+            position: absolute;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 64px;
+            /* identical to box height */
+            letter-spacing: -0.05em;
+            color: #424443;
+            }
+            #mn25 .a3_4 span{font-size: 24px;}
+
+            #mn25 .a4_1{
+                /* 04 ㅣ */
+            position: absolute;
+            
+            top: 54px;
+            left:1179px ;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            
+            
+            /* identical to box height */
+
+            letter-spacing: -0.05em;
+
+            color: #1CBC76;
+            }
+
+            #mn25 .a4_2{
+            position: absolute;
+            top: 49px;
+            left: 1221px;
+            width: 145px;
+            height: 57px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.05em;
+            color: #252326;}
+            #mn25 .a4_3{
+            top: 142px;
+            left: 1218px;
+            position: absolute;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 64px;
+            /* identical to box height */
+            letter-spacing: -0.05em;
+            color: #424443;
+            
+            }
+            #mn25 .a4_3 span{font-size: 24px;}
+
+            #mn4{width: 1920px; height: 650px; background-color: #F2F3F7; overflow: hidden; position: relative; overflow-x: hidden;}
+            #mn4 > h1{font-family: 'Malgun Gothic'; font-size: 34px; font-weight: bold; color: #333333; text-align: center; margin-top: 90px;}
+            #mn4 .mn4_1{width: 1510px; height: 330px; margin: 40px auto; }
+            #mn4 .mn4_1_1 h1{width: 350px; height: 130px; background-color: white; margin-top: -5px; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: medium; color: #333; padding-top: 25px; padding-left: 15px; }
+            #mn4 .mn4_1_1 p{font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: medium; color: #333; margin-top: -60px; padding-left: 15px; color: #666; }
+            #mn4 .mn4_1_2{float: left; margin-left: 385px; margin-top: -302px;}
+            #mn4 .mn4_1_2 h1{width: 350px; height: 130px; background-color: white; margin-top: -5px; font-family: 'Noto Sans KR', sans-serif; font-size: 22px ; font-weight: medium; color: #333; padding-top: 25px; padding-left: 15px;}
+            #mn4 .mn4_1_2 p{font-family:'Noto Sans KR', sans-serif; font-size: 14px; font-weight: medium; margin-top: -60px; padding-left: 15px; color: #666;}
+            #mn4 .mn4_1_3{margin-left: 770px; margin-top: -302px;}
+            #mn4 .mn4_1_3 h1{width: 350px; height: 130px; background-color: white; margin-top: -5px; font-family:'Noto Sans KR', sans-serif; font-size: 22px; font-weight: medium; color: #333; padding-top: 25px; padding-left: 15px;}
+            #mn4 .mn4_1_3 p{font-family:'Noto Sans KR', sans-serif; font-size: 14px; font-weight: medium; margin-top: -60px; padding-left: 15px; color: #666;}
+            #mn4 .mn4_1_4{ margin-top: -310px; margin-left: 1155px;}
+            #mn4 .mn4_1_4 h1{width: 350px; height: 130px; background-color: white; margin-top: -5px; font-family:'Noto Sans KR', sans-serif; font-size: 22px; font-weight: medium; color: #333; padding-top: 25px; padding-left: 15px;}
+            #mn4 .mn4_1_4 p{font-family:'Noto Sans KR', sans-serif; font-size: 14px; font-weight: medium; margin-top: -60px; padding-left: 15px; color: #666;}
+            #mn4 .mn4_left{position: absolute; left: 120px; top: 333px;}
+            #mn4 .mn4_right{position: absolute; right: 120px; top: 333px; rotate: 180deg;}
+            #mn4_2 p{display: inline-block;}
+            #mn4_2 p{display: inline-block;}
+            #mn4_2 .one1{width: 8.5px; height: 8.5px; border-radius: 50%; background-color:#A4A5A8; margin-top: 32px; margin-left: 890px; }
+            #mn4_2 .one2{width: 8.5px; height: 8.5px; border-radius: 50%; background-color: #a4a5a8; margin-top: 32px; margin-left: 8px;}
+            #mn4_2 .one3{width: 8.5px; height: 8.5px; border-radius: 50%; background-color: #a4a5a8; margin-top: 32px; margin-left: 8px;}
+            #mn4_2 .one4{width: 8.5px; height: 8.5px; border-radius: 50%; background-color: #a4a5a8; margin-top: 32px; margin-left: 8px;}
+            #mn4_2 .one5{width: 28px; height: 8.5px; border-radius: 4.21px; background-color: #10306F; margin-top: 32px; margin-left: 8px;}
+            #mn4_2 .one6{width: 8.5px; height: 8.5px; border-radius: 50%; background-color: #a4a5a8; margin-top: 32px; margin-left: 8px;}
+
+            footer{width: 1920px; height: 480px; background-color: #333; position: relative;}
+            footer img{position: absolute; top: 95px; left: 155px;}
+            footer .fo1{position: absolute; top: 115px; left: 200px; color: white; font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: bold;}
+            footer .fo2{position: absolute; top: 147px; left: 200px; color:#CBC5C5; font-family: 'Noto Sans KR', sans-serif; font-weight: medium; font-size: 12px;}
+            footer .fo3{position: absolute; top: 235px; left: 200px; width: 131px; height: 43px; background-color: #D1D1D1; border-radius: 30px; color: #333333; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+                        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)inset; line-height: 43px; text-align: center; font-weight: bold;}
+            footer .fo4{position: absolute; top: 123px; left: 700px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: bold; color: #CBC5C5}
+            footer .fo5{position: absolute; top: 163px; left: 700px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo6{position: absolute; top: 193px; left: 700px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo7{position: absolute; top: 223px; left: 700px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+
+            footer .fo8{position: absolute; top: 123px; left: 1000px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: bold; color: #CBC5C5}
+            footer .fo9{position: absolute; top: 163px; left: 1000px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo10{position: absolute; top: 193px; left: 1000px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo11{position: absolute; top: 223px; left: 1000px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo12{position: absolute; top: 253px; left: 1000px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+
+            footer .fo13{position: absolute; top: 123px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: bold; color: #CBC5C5}
+            footer .fo14{position: absolute; top: 163px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo15{position: absolute; top: 193px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo16{position: absolute; top: 223px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo17{position: absolute; top: 253px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+            footer .fo18{position: absolute; top: 283px; left: 1300px; font-family:'Noto Sans KR', sans-serif; font-size: 12px; font-weight: light; color: #CBC5C5}
+
+            footer .fo19{width: 1920px; position: absolute; top: 380px; border: 0.3px solid #CBC5C5 ; }
+            footer .fo20{position: absolute; top: 410px; font-size: 12px; font-weight: light; color:#6F6F6F; font-family:'Noto Sans KR', sans-serif ; left: 200px;}
+            footer .fo21{position: absolute; top: 410px; font-size: 12px; font-weight: light; color:#6F6F6F; font-family:'Noto Sans KR', sans-serif ; left: 1000px;}
+
+            
+
+
+           
+        
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+    
+
+            var a = 0;
+            $('.stx').hide();
+            $('.ttx').hide();
+            $('.ftx').hide();
+            $('.menu1').hover(function(){
+                $('nav').css({backgroundColor:'white'});
+                $('nav h1 img').attr('src','img/logo_2.png');
+                $('.menu1 a').css({color:'#222222'});
+                $('.ic1 img').attr('src','img/zoom_2.png')
+            },function(){
+                $('nav').css({backgroundColor:'#282828'});
+                $('.nv h1 img').attr('src','img/logo_1.png');
+                $('.menu1 a').css({color:'white'});
+                $('.ic1 img').attr('src','img/zoom_1.png');
+            });
+            $('nav').hover(function(){
+                $('nav').css({backgroundColor:'white'});
+                $('nav h1 img').attr('src','img/logo_2.png');
+                $('.menu1 a').css({color:'#222222'});
+                $('.ic1 img').attr('src','img/zoom_2.png');
+            },function(){
+                $('nav').css({backgroundColor:'#282828'});
+                $('.nv h1 img').attr('src','img/logo_1.png');
+                $('.menu1 a').css({color:'white'});
+                $('.ic1 img').attr('src','img/zoom_1.png');
+            });
+            $('.ar1').on('click',function(){
+                $('#mn1 .cl1').attr('src','img/gr.png');
+                $('#mn1 .cl2').attr('src','img/gy.png');
+                $('#mn1 .cl3').attr('src','img/gy.png');
+                $('#mn1 .cl1').css({left:'890px'});
+                $('#mn1 .cl2').css({left:'950px'});
+                $('#mn1 .pt1').css({left:'-600px',opacity:'50%'});
+                $('#mn1 .pt2').css({left:'1620px',opacity:'500%'});
+                $('#mn1 .pt3').css({left:'509px',opacity:'100%'});
+            });
+             $('.ar2').on('click',function(){
+                $('#mn1 .cl1').attr('src','img/gy.png');
+                $('#mn1 .cl2').attr('src','img/gy.png');
+                $('#mn1 .cl3').attr('src','img/gr.png');
+                $('#mn1 .cl2').css({left:'930px'});
+                $('#mn1 .cl3').css({left:'970px'});
+                $('#mn1 .pt1').css({left:'1620px',opacity:'50%'});
+                $('#mn1 .pt2').css({left:'509px',opacity:'100%'});
+                $('#mn1 .pt3').css({left:'-600px',opacity:'50%'});
+            });
+
+            $('.tx7').hover(function(){
+                $('.tx7').css({backgroundColor:'#f2f3f7'});
+            });
+            $('.menu1_1').hide();
+            $('.menu1').hover(function(){
+                $('.menu1_1').slideDown(400);
+            },function(){
+                $('.menu1_1').hover(function(){
+                $('nav').css({backgroundColor:'white'});
+                $('nav h1 img').attr('src','img/logo_2.png');
+                $('.menu1 a').css({color:'#222222'});
+                $('.ic1 img').attr('src','img/zoom_2.png')
+                },function(){
+                $('nav').css({backgroundColor:'#282828'});
+                $('.nv h1 img').attr('src','img/logo_1.png');
+                $('.menu1 a').css({color:'white'});
+                $('.ic1 img').attr('src','img/zoom_1.png');
+                });
+                $('.menu1_1').mouseleave(function(){
+                },function(){
+                    $('.menu1_1').slideUp(400);
+                });
+            });
+            $('.menu1 li').eq(0).hover(function(){
+                $('.menu1 li').eq(0).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(0).css({borderBottom:'0px'})
+            });
+            $('.menu1 li').eq(1).hover(function(){
+                $('.menu1 li').eq(1).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(1).css({borderBottom:'0px'})
+            });
+            $('.menu1 li').eq(2).hover(function(){
+                $('.menu1 li').eq(2).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(2).css({borderBottom:'0px'})
+            });
+            $('.menu1 li').eq(3).hover(function(){
+                $('.menu1 li').eq(3).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(3).css({borderBottom:'0px'})
+            });
+            $('.menu1 li').eq(4).hover(function(){
+                $('.menu1 li').eq(4).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(4).css({borderBottom:'0px'})
+            });
+            $('.menu_1 li').hover(function(){
+                $('.menu1 li').eq(0).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(0).css({borderBottom:'0px'})
+            });
+            $('.menu_2 li').hover(function(){
+                $('.menu1 li').eq(1).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(1).css({borderBottom:'0px'})
+            });
+            $('.menu_3 li').hover(function(){
+                $('.menu1 li').eq(2).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(2).css({borderBottom:'0px'})
+            });
+            $('.menu_4 li').hover(function(){
+                $('.menu1 li').eq(3).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(3).css({borderBottom:'0px'})
+            });
+            $('.menu_5 li').hover(function(){
+                $('.menu1 li').eq(4).css({borderBottom:'4px solid #008952',borderRadius:'2%'});
+            },function(){
+                $('.menu1 li').eq(4).css({borderBottom:'0px'})
+            });
+            
+            
+            
+            $('#mn3 .cbox1').click(function(){
+                $('.ftx').hide();
+                $('.ttx').hide();
+                $('.stx').hide();
+                $('.tx').show();
+                $('#mn3 .cbox1').css({backgroundColor: '#007b49',border:'0px'})
+                $('#mn3 .cbox1 .cbox1_1').css({color:'#FDFDFB'});
+                $('#mn3 .cbox1 .cbox1_2').css({color: '#FDFDFB'});
+                $('#mn3 .cbox2').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'})
+                $('#mn3 .cbox2 .cbox2_1').css({color: '#444444'});
+                $('#mn3 .cbox2 .cbox2_2').css({color: '#444444'});
+                $('#mn3 .cbox3').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox3_1').css({color: '#444444'});
+                $('#mn3 .cbox3_2').css({color: '#444444'});
+                $('#mn3 .cbox4').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox4_1').css({color: '#444444'});
+                $('#mn3 .cbox4_2').css({color: '#444444'});
+            });
+            $('#mn3 .cbox2').click(function(){
+                $('.ftx').hide();
+                $('.ttx').hide();
+                $('.stx').show();
+                $('.tx').hide();
+                $('#mn3 .cbox2').css({backgroundColor: '#007b49',border:'0px'})
+                $('#mn3 .cbox2 .cbox2_1').css({color:'#FDFDFB'});
+                $('#mn3 .cbox2 .cbox2_2').css({color: '#FDFDFB'});
+                $('#mn3 .cbox1').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox1_1').css({color: '#444444'});
+                $('#mn3 .cbox1_2').css({color: '#444444'});
+                $('#mn3 .cbox3').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox3_1').css({color: '#444444'});
+                $('#mn3 .cbox3_2').css({color: '#444444'});
+                $('#mn3 .cbox4').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox4_1').css({color: '#444444'});
+                $('#mn3 .cbox4_2').css({color: '#444444'});
+            
+            });
+            $('#mn3 .cbox3').click(function(){
+                $('.ftx').hide();
+                $('.stx').hide();
+                $('.ttx').show();
+                $('.tx').hide();
+                $('#mn3 .cbox3').css({backgroundColor: '#007b49',border:'0px'})
+                $('#mn3 .cbox3 .cbox3_1').css({color:'#FDFDFB'});
+                $('#mn3 .cbox3 .cbox3_2').css({color: '#FDFDFB'});
+                $('#mn3 .cbox1').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox1_1').css({color: '#444444'});
+                $('#mn3 .cbox1_2').css({color: '#444444'});
+                $('#mn3 .cbox2').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox2_1').css({color: '#444444'});
+                $('#mn3 .cbox2_2').css({color: '#444444'});
+                $('#mn3 .cbox4').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox4_1').css({color: '#444444'});
+                $('#mn3 .cbox4_2').css({color: '#444444'});
+            });
+            $('#mn3 .cbox4').click(function(){
+                $('.ttx').hide();
+                $('.stx').hide();
+                $('.ftx').show();
+                $('.tx').hide();
+                $('#mn3 .cbox4').css({backgroundColor: '#007b49',border:'0px'})
+                $('#mn3 .cbox4 .cbox4_1').css({color:'#FDFDFB'});
+                $('#mn3 .cbox4 .cbox4_2').css({color: '#FDFDFB'});
+                $('#mn3 .cbox1').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox1_1').css({color: '#444444'});
+                $('#mn3 .cbox1_2').css({color: '#444444'});
+                $('#mn3 .cbox2').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox2_1').css({color: '#444444'});
+                $('#mn3 .cbox2_2').css({color: '#444444'});
+                $('#mn3 .cbox3').css({border: '2px solid #CCCCCC',backgroundColor:'#fff'});
+                $('#mn3 .cbox3_1').css({color: '#444444'});
+                $('#mn3 .cbox3_2').css({color: '#444444'});
+            
+            });
+            $('.map_search_down').hide();
+            $('.map_search').hover(function(){
+                $('.map_search_down').slideToggle(200);
+                $('.map_search_t3 img').attr('src','img/up.png');
+            },function(){
+ 
+                $('.map_search_t3 img').attr('src','img/down.png');
+            });
+            $('.map_search_down').hover(function(){
+                $('.map_search_down').show();
+                $('.map_search_t3 img').attr('src','img/up.png');
+            },function(){
+                $('.map_search_down').slideUp(200);
+                $('.map_search_t3 img').attr('src','img/down.png');
+            });
+            $('.map_search_down1').click(function(){
+                $('.map_search_t1').text('대구');
+                $('.map_search_t2').text('Daegu');
+                alert('미구현 되었습니다. 대전을 클릭해보세요.');
+                $('.map_search_down1_4').attr('src','img/check.png')
+                $('.map_search_down2_4').attr('src','img/no_check.png')
+                $('.tx1_1').text('대구 가맹점');
+                $('.tx1_2').text('10');
+                $('.cbox1_2').text('10');
+                $('.cbox2_2').text('2');
+                $('.cbox3_2').text('2');
+                $('.cbox3_4').text('0');
+            });
+            $('.map_search_down2').click(function(){
+                $('.map_search_t1').text('대전');
+                $('.map_search_t2').text('Daejeon');
+                $('.map_search_down2_4').attr('src','img/check.png')
+                $('.map_search_down1_4').attr('src','img/no_check.png')
+                $('.tx1_1').text('대전 가맹점');
+                $('.tx1_2').text('12');
+                $('.cbox1_2').text('12');
+                $('.cbox2_2').text('3');
+                $('.cbox3_2').text('4');
+                $('.cbox3_4').text('1');
+            });
+            $('.map_search_down3').click(function(){
+                alert('구현이 되지 않았습니다.대전을 클릭해보세요.');
+            });
+            $('.map_search_down4').click(function(){
+                alert('구현이 되지 않았습니다.대전을 클릭해보세요.');
+            });
+            $('.map_search_down5').click(function(){
+                alert('구현이 되지 않았습니다.대전을 클릭해보세요.');
+            });
+            $('.map_search_down6').click(function(){
+                alert('구현이 되지 않았습니다.대전을 클릭해보세요.');
+            });
+
+            $('.tlm1').click(function(){//유성구
+                $('.mp').attr('src','img/map_1_ yuseong.png')
+                $('.cbox1_2').text('4');
+                $('.cbox2_2').text('1');
+                $('.cbox3_2').text('1');
+                $('.cbox4_2').text('0');
+                $('.tlm1 h1').css({color:'white'});
+                $('.tlm1 p').css({backgroundColor:'white',color:'#008951'})
+                $('.tlm2 h1').css({color:'#505050'})
+                $('.tlm2 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm3 h1').css({color:'#505050'})
+                $('.tlm3 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm4 h1').css({color:'#505050'})
+                $('.tlm4 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm5 h1').css({color:'#505050'})
+                $('.tlm5 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                
+                    $('.tx2_1').text('LACOSTE 현대대전 아울렛')
+                    $('.tx2_2').text('대전광역시 유성구 테크노중앙로 123 (용산동)')
+                    $('.tx3_1').text('LACOSTE 신세계대전 스포츠')
+                    $('.tx3_2').text('대전시 유성구 엑스포로 17')
+                    $('.tx4_1').text('LACOSTE 신세계대전 우먼')
+                    $('.tx4_2').text('대전시 유성구 엑스포로 17 신세계백화점 대전점 3층')
+                    $('.tx5_1').text('LACOSTE 신세계대전 남성')
+                    $('.tx5_2').text('대전시 유성구 엑스포로 17 (도룡동)')
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+            
+                $('.cbox1').click(function(){
+                    $('.tx2_1').text('LACOSTE 현대대전 아울렛')
+                    $('.tx2_2').text('대전광역시 유성구 테크노중앙로 123 (용산동)')
+                    $('.tx3_1').text('LACOSTE 신세계대전 스포츠')
+                    $('.tx3_2').text('대전시 유성구 엑스포로 17')
+                    $('.tx4_1').text('LACOSTE 신세계대전 우먼')
+                    $('.tx4_2').text('대전시 유성구 엑스포로 17 신세계백화점 대전점 3층')
+                    $('.tx5_1').text('LACOSTE 신세계대전 남성')
+                    $('.tx5_2').text('대전시 유성구 엑스포로 17 (도룡동)')
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+                });
+                $('.cbox2').click(function(){
+                    $('.stx2_1').text('LACOSTE 신세계대전 남성')
+                    $('.stx2_2').text('대전시 유성구 엑스포로 17 (도룡동)')
+                    $('.stx3_1').hide();
+                    $('.stx3_2').hide();
+                    $('.stx3_3').hide();
+                    $('.stx4_1').hide();
+                    $('.stx4_2').hide();
+                    $('.stx4_3').hide();
+    
+                });
+                $('.cbox3').click(function(){
+                    $('.ttx2_1').text('LACOSTE 신세계대전 우먼')
+                    $('.ttx2_2').text('대전시 유성구 엑스포로 17 신세계백화점 대전점 3층')
+                    $('.ttx3_1').hide();
+                    $('.ttx3_2').hide();
+                    $('.ttx3_3').hide();
+                    $('.ttx4_1').hide();
+                    $('.ttx4_2').hide();
+                    $('.ttx4_3').hide();
+                    $('.ttx5_1').hide();
+                    $('.ttx5_2').hide();
+                    $('.ttx5_3').hide();
+    
+                });
+                $('.cbox4').click(function(){
+                    $('.ftx2_1').hide();
+                    $('.ftx2_2').hide();
+                    $('.ftx2_3').hide();
+                });
+            });
+        
+           
+            $('.tlm2').click(function(){//중구
+                $('.mp').attr('src','img/map_1_ jounggu.png')
+                $('.cbox1_2').text('1');
+                $('.cbox2_2').text('0');
+                $('.cbox3_2').text('0');
+                $('.cbox4_2').text('0');
+                $('.tlm2 h1').css({color:'white'});
+                $('.tlm2 p').css({backgroundColor:'white',color:'#008951'})
+                $('.tlm1 h1').css({color:'#505050'})
+                $('.tlm1 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm3 h1').css({color:'#505050'})
+                $('.tlm3 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm4 h1').css({color:'#505050'})
+                $('.tlm4 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm5 h1').css({color:'#505050'})
+                $('.tlm5 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tx2_1').text('LACOSTE 대전 대리점')
+                    $('.tx2_2').text('대전 중구 대종로 480번길 54')
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+            
+                $('.cbox1').click(function(){
+                    $('.tx2_1').text('LACOSTE 대전 대리점')
+                    $('.tx2_2').text('대전 중구 대종로 480번길 54')
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+                });
+                $('.cbox2').click(function(){
+                    $('.stx2_1').hide();
+                    $('.stx2_2').hide();
+                    $('.stx2_3').hide();
+                    $('.stx3_1').hide();
+                    $('.stx3_2').hide();
+                    $('.stx3_3').hide();
+                    $('.stx4_1').hide();
+                    $('.stx4_2').hide();
+                    $('.stx4_3').hide();
+                    $('.stx5_1').hide();
+                    $('.stx5_2').hide();
+                    $('.stx5_3').hide();
+    
+                });
+                $('.cbox3').click(function(){
+                    $('.ttx2_1').hide();
+                    $('.ttx2_2').hide();
+                    $('.ttx2_3').hide();
+                    $('.ttx3_1').hide();
+                    $('.ttx3_2').hide();
+                    $('.ttx3_3').hide();
+                    $('.ttx4_1').hide();
+                    $('.ttx4_2').hide();
+                    $('.ttx4_3').hide();
+                    $('.ttx5_1').hide();
+                    $('.ttx5_2').hide();
+                    $('.ttx5_3').hide();
+                });
+                $('.cbox4').click(function(){
+                    $('.ftx2_1').hide();
+                    $('.ftx2_2').hide();
+                    $('.ftx2_3').hide();
+                });
+            });
+
+            
+            $('.tlm3').click(function(){//대덕구
+                $('.mp').attr('src','img/map_1_ daeduk.png')
+                $('.cbox1_2').text('0');
+                $('.cbox2_2').text('0');
+                $('.cbox3_2').text('0');
+                $('.cbox4_2').text('0');
+                $('.tlm3 h1').css({color:'white'});
+                $('.tlm3 p').css({backgroundColor:'white',color:'#008951'})
+                $('.tlm1 h1').css({color:'#505050'})
+                $('.tlm1 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm2 h1').css({color:'#505050'})
+                $('.tlm2 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm4 h1').css({color:'#505050'})
+                $('.tlm4 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm5 h1').css({color:'#505050'})
+                $('.tlm5 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                    $('.tx2_1').hide();
+                    $('.tx2_2').hide();
+                    $('.tx2_3').hide();
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+            $('.cbox1').click(function(){
+                    $('.tx2_1').hide();
+                    $('.tx2_2').hide();
+                    $('.tx2_3').hide();
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+                });
+                $('.cbox2').click(function(){
+                    $('.stx2_1').hide();
+                    $('.stx2_2').hide();
+                    $('.stx2_3').hide();
+                    $('.stx3_1').hide();
+                    $('.stx3_2').hide();
+                    $('.stx3_3').hide();
+                    $('.stx4_1').hide();
+                    $('.stx4_2').hide();
+                    $('.stx4_3').hide();
+    
+                });
+                $('.cbox3').click(function(){
+                    $('.ttx2_1').hide();
+                    $('.ttx2_2').hide();
+                    $('.ttx2_3').hide();
+                    $('.ttx3_1').hide();
+                    $('.ttx3_2').hide();
+                    $('.ttx3_3').hide();
+                    $('.ttx4_1').hide();
+                    $('.ttx4_2').hide();
+                    $('.ttx4_3').hide();
+                    $('.ttx5_1').hide();
+                    $('.ttx5_2').hide();
+                    $('.ttx5_3').hide();
+    
+                });
+                $('.cbox4').click(function(){
+                    $('.ftx2_1').hide();
+                    $('.ftx2_2').hide();
+                    $('.ftx2_3').hide();
+        
+            });
+        });
+                
+            $('.tlm4').click(function(){//서구
+                $('.mp').attr('src','img/map_1_ sugu.png')
+                $('.cbox1_2').text('6');
+                $('.cbox2_2').text('2');
+                $('.cbox3_2').text('2');
+                $('.cbox4_2').text('1');
+                $('.tlm4 h1').css({color:'white'});
+                $('.tlm4 p').css({backgroundColor:'white',color:'#008951'});
+                $('.tlm1 h1').css({color:'#505050'})
+                $('.tlm1 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm2 h1').css({color:'#505050'})
+                $('.tlm2 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm3 h1').css({color:'#505050'})
+                $('.tlm3 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm5 h1').css({color:'#505050'})
+                $('.tlm5 p').css({backgroundColor:'#5b5b5b',color:'white'});
+                $('.tx2_1').text('LACOSTE 롯데대전 우먼')
+                    $('.tx2_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층')
+                    $('.tx3_1').text('LACOSTE 롯데대전 남성')
+                    $('.tx3_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층')
+                    $('.tx4_1').text('LACOSTE 갤러리아타임월드 우먼')
+                    $('.tx4_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층')
+                    $('.tx5_1').text('LACOSTE 갤러리아타임월드 남성')
+                    $('.tx5_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층')
+                    $('.tx6_1').text('LACOSTE 갤러리아타임월드 키즈')
+                    $('.tx6_2').text('대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈');
+                    $('.tx7_1').text('LACOSTE 갤러리아타임월드 스포츠');
+                    $('.tx7_2').text('대전광역시 서구 대덕대로 211 갤러리아타임월드백화점 8층');
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+            
+                $('.cbox1').click(function(){
+                    $('.tx2_1').text('LACOSTE 롯데대전 우먼')
+                    $('.tx2_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층')
+                    $('.tx3_1').text('LACOSTE 롯데대전 남성')
+                    $('.tx3_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층')
+                    $('.tx4_1').text('LACOSTE 갤러리아타임월드 우먼')
+                    $('.tx4_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층')
+                    $('.tx5_1').text('LACOSTE 갤러리아타임월드 남성')
+                    $('.tx5_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층')
+                    $('.tx6_1').text('LACOSTE 갤러리아타임월드 키즈')
+                    $('.tx6_2').text('대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈');
+                    $('.tx7_1').text('LACOSTE 갤러리아타임월드 스포츠');
+                    $('.tx7_2').text('대전광역시 서구 대덕대로 211 갤러리아타임월드백화점 8층');
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+                });
+                $('.cbox2').click(function(){
+                    $('.stx2_1').text('LACOSTE 롯데대전 남성')
+                    $('.stx2_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층')
+                    $('.stx3_2').text('LACOSTE 갤러리아타임월드 남성');
+                    $('.stx3_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층');
+                    $('.stx4_1').hide();
+                    $('.stx4_2').hide();
+                    $('.stx4_3').hide();
+    
+                });
+                $('.cbox3').click(function(){
+                    $('.ttx2_1').text('LACOSTE 롯데대전 우먼')
+                    $('.ttx2_2').text('대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층')
+                    $('.ttx3_1').text('LACOSTE 갤러리아타임월드 우먼');
+                    $('.ttx3_2').text('대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층');
+                    $('.ttx4_1').hide();
+                    $('.ttx4_2').hide();
+                    $('.ttx4_3').hide();
+                    $('.ttx5_1').hide();
+                    $('.ttx5_2').hide();
+                    $('.ttx5_3').hide();
+    
+                });
+                $('.cbox4').click(function(){
+                    $('.ftx2_1').text('LACOSTE 갤러리아타임월드 키즈');
+                    $('.ftx2_2').text('대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈');
+                });
+            });
+            $('.tlm5').click(function(){//동구
+                $('.mp').attr('src','img/map_1_ dongu.png')
+                $('.cbox1_2').text('0');
+                $('.cbox2_2').text('0');
+                $('.cbox3_2').text('0');
+                $('.cbox4_2').text('0');
+                $('.tlm5 h1').css({color:'white'});
+                $('.tlm5 p').css({backgroundColor:'white',color:'#008951'})
+                $('.tlm1 h1').css({color:'#505050'})
+                $('.tlm1 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm2 h1').css({color:'#505050'})
+                $('.tlm2 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm3 h1').css({color:'#505050'})
+                $('.tlm3 p').css({backgroundColor:'#5b5b5b',color:'white'})
+                $('.tlm4 h1').css({color:'#505050'})
+                $('.tlm4 p').css({backgroundColor:'#5b5b5b',color:'white'});
+                $('.tx2_1').hide();
+                    $('.tx2_2').hide();
+                    $('.tx2_3').hide();
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+            $('.cbox1').click(function(){
+                    $('.tx2_1').hide();
+                    $('.tx2_2').hide();
+                    $('.tx2_3').hide();
+                    $('.tx3_1').hide();
+                    $('.tx3_2').hide();
+                    $('.tx3_3').hide();
+                    $('.tx4_1').hide();
+                    $('.tx4_2').hide();
+                    $('.tx4_3').hide();
+                    $('.tx5_1').hide();
+                    $('.tx5_2').hide();
+                    $('.tx5_3').hide();
+                    $('.tx6_1').hide();
+                    $('.tx6_2').hide();
+                    $('.tx6_3').hide();
+                    $('.tx7_1').hide();
+                    $('.tx7_2').hide();
+                    $('.tx7_3').hide();
+                    $('.tx8_1').hide();
+                    $('.tx8_2').hide();
+                    $('.tx8_3').hide();
+                    $('.tx9_1').hide();
+                    $('.tx9_2').hide();
+                    $('.tx9_3').hide();
+                    $('.tx10_1').hide();
+                    $('.tx10_2').hide();
+                    $('.tx10_3').hide();
+                    $('.tx11_1').hide();
+                    $('.tx11_2').hide();
+                    $('.tx11_3').hide();
+                    $('.tx12_1').hide();
+                    $('.tx12_2').hide();
+                    $('.tx12_3').hide();
+                    $('.tx13_1').hide();
+                    $('.tx13_2').hide();
+                    $('.tx13_3').hide();
+                });
+                $('.cbox2').click(function(){
+                    $('.stx2_1').hide();
+                    $('.stx2_2').hide();
+                    $('.stx2_3').hide();
+                    $('.stx3_1').hide();
+                    $('.stx3_2').hide();
+                    $('.stx3_3').hide();
+                    $('.stx4_1').hide();
+                    $('.stx4_2').hide();
+                    $('.stx4_3').hide();
+    
+                });
+                $('.cbox3').click(function(){
+                    $('.ttx2_1').hide();
+                    $('.ttx2_2').hide();
+                    $('.ttx2_3').hide();
+                    $('.ttx3_1').hide();
+                    $('.ttx3_2').hide();
+                    $('.ttx3_3').hide();
+                    $('.ttx4_1').hide();
+                    $('.ttx4_2').hide();
+                    $('.ttx4_3').hide();
+                    $('.ttx5_1').hide();
+                    $('.ttx5_2').hide();
+                    $('.ttx5_3').hide();
+    
+                });
+                $('.cbox4').click(function(){
+                    $('.ftx2_1').hide();
+                    $('.ftx2_2').hide();
+                    $('.ftx2_3').hide();
+        
+            });
+            });
+            
+
+            
+
+
+                
+            
+            
+           
+            
+            
+         
+         
+         
+
+
+                    
+
+        });
+    
+    </script>
+    </head>
+    <body>
+        <div id="container">
+            <!--메뉴바-->
+            <nav class="nv">
+                <h1><img src="img/logo_1.png"></h1>
+                <ul class="menu1">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">온라인몰</a></li>
+                    <li><a href="#">입점문의</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <div class="menu1_1">
+                    <ul class="menu_1">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">경영철학</a></li>
+                        <li><a href="#">역사관</a></li>
+                        <li><a href="#">CI</a></li>
+                    </ul>
+                    <ul class="menu_2">
+                        <li><a href="#">Men's</a></li>
+                        <li><a href="#">Women's</a></li>
+                        <li><a href="#">Kid's</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                    <ul class="menu_3">
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                    <ul class="menu_4">
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                    <ul class="menu_5">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">문의사항</a></li>
+                    </ul>
+                </div>
+                <h2 class="ic1"><img src="img/zoom_1.png"></h2>
+                <h2 class="ic2"><img src="img/my.png"></h2>
+            </nav>
+            <main>
+                <!--페이지 1-->
+                <div id="mn1">
+                    <img class="pt1" src="img/mainpt_1.jpg"> 
+                    <img class="pt2" src="img/mainpt_2.jpg">
+                    <img class="pt3" src="img/mainpt_3.jpg">
+                    <img class="ar1" src="img/arrow_1.png">
+                    <img class="ar2" src="img/arrow_2.png">
+                    <img class="cl1" src="img/gy.png">
+                    <img class="cl2" src="img/gr.png">
+                    <img class="cl3" src="img/gy.png">
+                    <img class="pause1" src="img/pause.png">
+                </div>
+                <!--페이지 2-->
+                <div id="mn2">
+                    <div class="box1">
+                        <h1>신규오픈매장</h1>
+                            <ul class="bm1">
+                                <li><a href="#">신세계 대전점</a></li>
+                                <li><a href="#">목포 대리점</a></li>
+                                <li><a href="#">제주 대리점 </a></li>
+                                <li><a href="#">진주 대리점</a></li>
+                            </ul>
+                            <ul class="bm2">
+                                <li><a href="#">대전시 유성구 엑스포로 17</a></li>
+                                <li><a href="#">전라남도 목포시 영산로59번길 32</a></li>
+                                <li><a href="#">제주특별자치도 제주시 관덕로11길 6</a></li>
+                                <li><a href="#">경상남도 진주시 진주대로 1084</a></li>
+                </div>
+                        <div class="box2">
+                            <h1>Lacoste News</h1>
+                            <ul class="bm1">
+                                <li><a href="#">콜라보</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">콜렉션 </a></li>
+                                <li><a href="#">신상품</a></li>
+                            </ul>
+                            <ul class="bm2">
+                                <li><a href="#">Lacoste x Netflix</a></li>
+                                <li><a href="#">라코스테 스프링 페스타</a></li>
+                                <li><a href="#">네오 헤리티지</a></li>
+                                <li><a href="#">LT 125 스니커즈</a></li>
+                            </ul>
+                        </div>
+                        <div class="box3">
+                            <h1>Lacoste</h1>
+                            <p>clearance sale</p>
+                            <img src="img/laco_1.png">
+                        </div>
+                        <div class="box4">
+                            <h1>공지사항  ㅣ  라코스테 대전점 점포 이동 안내</h1>
+                            <p>2023-04-14</p>
+                        </div>
+                        </div>
+                        <!--페이지 2.5-->
+                        <div id="mn25">
+                            <img src="img/lacobak.png">
+                            <p class="a1_1">01 ㅣ</p>
+                            <p class="a1_2">2023년 전국<br>
+                                라코스테 가맹점</p>
+                            <p class="a1_3">2022년 기준</p>
+                            <p class="a1_4">22%<span>↑</span></p>
+
+                            <p class="a2_1">02 ㅣ</p>
+                            <p class="a2_2">전국 라코스테<br>
+                                매출 증가율</p>
+                            <p class="a2_3">지난 5년 대비</p>
+                            <p class="a2_4">32%<span>↑</span></p>
+
+                            <p class="a3_1">03 ㅣ</p>
+                            <p class="a3_2">라코스테 가맹점 <br>문의</p>
+                            <p class="a3_3">2021년 기준</p>
+                            <p class="a3_4">46%<span>↑</span></p>
+
+                            <p class="a4_1">04 ㅣ</p>
+                            <p class="a4_2">사회취약계층<br>관련 봉사
+                                </p>
+                            <p class="a4_3">23.3%<span>↑</span></p>
+                        </div>
+                        <!--페이지 3-->
+                        <div id='mn3'>
+                            <p class="da">Nationwide</p>
+                            <p class="st">Affiliated<br>
+                                store
+                            </p>
+                            <div class="cbox1">
+                                <p class="cbox1_1">all</p>
+                                <p class="cbox1_2">12</p>
+                            </div>
+                            <div class="cbox2">
+                                <p class="cbox2_1">Mens</p>
+                                <p class="cbox2_2">3</p>
+                            </div>
+                            <div class="cbox3">
+                                <p class="cbox3_1">Womens</p>
+                                <p class="cbox3_2">4</p>
+                            </div>
+                            <div class="cbox4">
+                                <p class="cbox4_1">Kids</p>
+                                <p class="cbox4_2">1</p>
+                            </div>
+
+                            <img class="mp" src="img/map_1.png">
+
+                            <div class="map_search">
+                                <p class="map_search_t1">대전</p>
+                                <p class="map_search_t2">Daejeon</p>
+                                <p class="map_search_t3"><img src="img/down.png"></p>
+                            </div>
+                            <!--지역 선택-->
+                            <div class="map_search_down">
+                                <div class="map_search_down1">
+                                <p class="map_search_down1_1"></p>
+                                <p class="map_search_down1_2">대구</p>
+                                <p class="map_search_down1_3">Daegu</p>
+                                <img class="map_search_down1_4" src="img/no_check.png">
+                                </div>
+                                <div class="map_search_down2">
+                                    <p class="map_search_down2_1"></p>
+                                    <p class="map_search_down2_2">대전</p>
+                                    <p class="map_search_down2_3">Daejeon</p>
+                                    <img class="map_search_down2_4" src="img/check.png">
+                                </div>
+                                <div class="map_search_down3">
+                                    <p class="map_search_down3_1"></p>
+                                    <p class="map_search_down3_2">부산</p>
+                                    <p class="map_search_down3_3">Busan</p>
+                                    <img class="map_search_down3_4" src="img/no_check.png">
+                                </div>
+                                <div class="map_search_down4">
+                                    <p class="map_search_down4_1"></p>
+                                    <p class="map_search_down4_2">서울</p>
+                                    <p class="map_search_down4_3">Seoul</p>
+                                    <img class="map_search_down4_4" src="img/no_check.png">
+                                </div>
+                                <div class="map_search_down5">
+                                    <p class="map_search_down5_1"></p>
+                                    <p class="map_search_down5_2">광주</p>
+                                    <p class="map_search_down5_3">Gwangju</p>
+                                    <img class="map_search_down5_4" src="img/no_check.png">
+                                </div>
+                                <div class="map_search_down6">
+                                    <p class="map_search_down6_1"></p>
+                                    <p class="map_search_down6_2">인천</p>
+                                    <p class="map_search_down6_3">Incheon</p>
+                                    <img class="map_search_down6_4" src="img/no_check.png">
+                                </div>
+                            </div>
+                            <!--대전 지도 위 지역 표시-->
+                            <div class="tlm"> 
+                                <div class="tlm1">
+                                    <h1>유성구</h1>
+                                    <p>4</p>
+                                </div>
+                                <div class="tlm2">
+                                    <h1>중구</h1>
+                                    <p>1</p>
+                                </div>
+                                <div class="tlm3">
+                                    <h1>대덕구</h1>
+                                    <p>0</p>
+                                </div>
+                                <div class="tlm4">
+                                    <h1>서구</h1>
+                                    <p>7</p>
+                                </div>
+                                <div class="tlm5">
+                                    <h1>동구</h1>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            
+
+                        <div class="tx_box">
+                            <div class="tx1">
+                                <p class="tx1_1">대전 가맹점</p>
+                                <p class="tx1_2">12</p>
+                                <p class="tx1_3">자세히</p>
+                            </div>
+                            <div class="tx">
+                            <!--대전 전지역 all 클릭시-->
+                            <div class="tx2">
+                                <p class="tx2_1">LACOSTE 대전 대리점</p>
+                                <p class="tx2_2">대전 중구 대종로 480번길 54</p>
+                                <p class="tx2_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx3">
+                                <p class="tx3_1">
+                                    LACOSTE 롯데대전 우먼</p>
+                                <p class="tx3_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층</p>
+                                <p class="tx3_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx4">
+                                <p class="tx4_1">
+                                    LACOSTE 롯데대전 남성</p>
+                                <p class="tx4_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층</p>
+                                <p class="tx4_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx5">
+                                <p class="tx5_1">LACOSTE 현대대전 아울렛</p>
+                                <p class="tx5_2">대전광역시 유성구 테크노중앙로 123 (용산동)</p>
+                                <p class="tx5_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx6">
+                                <p class="tx6_1">
+                                    LACOSTE 신세계대전 스포츠</p>
+                                <p class="tx6_2">대전시 유성구 엑스포로 17</p>
+                                <p class="tx6_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx7">
+                                <p class="tx7_1">
+                                    LACOSTE 신세계대전 우먼</p>
+                                <p class="tx7_2">대전시 유성구 엑스포로 17 신세계백화점 대전점 3층</p>
+                                <p class="tx7_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx8">
+                                <p class="tx8_1">LACOSTE 갤러리아타임월드 우먼</p>
+                                <p class="tx8_2">대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층</p>
+                                <p class="tx8_3"><img src="img/here.png"></p> 
+                                </div>
+                            <div class="tx9">
+                                <p class="tx9_1">LACOSTE 갤러리아타임월드 남성</p>
+                                <p class="tx9_2">대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층</p>
+                                <p class="tx9_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx10">
+                                <p class="tx10_1">LACOSTE 롯데대전 우먼</p>
+                                <p class="tx10_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층</p>
+                                <p class="tx10_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx11">
+                                <p class="tx11_1">LACOSTE 신세계대전 남성</p>
+                                <p class="tx11_2">대전시 유성구 엑스포로 17 (도룡동)</p>
+                                <p class="tx11_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx12">
+                                <p class="tx12_1">LACOSTE 갤러리아타임월드 키즈</p>
+                                <p class="tx12_2">대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈</p>
+                                <p class="tx12_3"><img src="img/here.png"></p>
+                            </div>
+                            <div class="tx13">
+                                <p class="tx13_1">LACOSTE 갤러리아타임월드 스포츠</p>
+                                <p class="tx13_2">대전광역시 서구 대덕대로 211 갤러리아타임월드백화점 8층</p>
+                                <p class="tx13_3"><img src="img/here.png"></p>
+                            </div>
+                        </div>
+                        <div class="line1_1"></div>
+                        <div class="line1_2"></div>
+                    </div>
+                    </div>
+                    <!--대전 전지역 남성 클릭시-->
+                    <div class="stx_box">
+                        
+                        </div>
+                        <div class="stx">
+                        <div class="stx2">
+                            <p class="stx2_1">LACOSTE 롯데대전 남성</p>
+                            <p class="stx2_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 5층</p>
+                            <p class="stx2_3"><img src="img/here.png"></p>
+                        </div>
+                        <div class="stx3">
+                            <p class="stx3_1">
+                                LACOSTE 갤러리아타임월드 남성</p>
+                            <p class="stx3_2">대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 6층</p>
+                            <p class="stx3_3"><img src="img/here.png"></p>
+                        </div>
+                        <div class="stx4">
+                            <p class="stx4_1">
+                                LACOSTE 신세계대전 남성</p>
+                            <p class="stx4_2">대전시 유성구 엑스포로 17 (도룡동)</p>
+                            <p class="stx4_3"><img src="img/here.png"></p>
+                        </div>
+                    </div>
+                    <div class="line1_1"></div>
+                    <div class="line1_2"></div>
+                </div>
+                </div>
+                <!--대전 전지역 여성 클릭시-->
+                <div class="ttx_box">
+                    <div class="ttx">
+                    <div class="ttx2">
+                        <p class="ttx2_1">LACOSTE 롯데대전 우먼</p>
+                        <p class="ttx2_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층</p>
+                        <p class="ttx2_3"><img src="img/here.png"></p>
+                    </div>
+                    <div class="ttx3">
+                        <p class="ttx3_1">
+                            LACOSTE 신세계대전 우먼</p>
+                        <p class="ttx3_2">대전시 유성구 엑스포로 17 신세계백화점 대전점 3층</p>
+                        <p class="ttx3_3"><img src="img/here.png"></p>
+                    </div>
+                    <div class="ttx4">
+                        <p class="ttx4_1">
+                            LACOSTE 갤러리아타임월드 우먼</p>
+                        <p class="ttx4_2">대전광역시 서구 대덕대로 211 (둔산동, 갤러리아타임월드백화점) 4층</p>
+                        <p class="ttx4_3"><img src="img/here.png"></p>
+                    </div>
+                    <div class="ttx5">
+                        <p class="ttx5_1">
+                            LACOSTE 롯데대전 우먼</p>
+                        <p class="ttx5_2">대전광역시 서구 계룡로 598 (괴정동, 롯데백화점) 4층</p>
+                        <p class="ttx5_3"><img src="img/here.png"></p>
+                    </div>
+                </div>
+                <div class="line1_1"></div>
+                <div class="line1_2"></div>
+            </div>
+            </div>
+            
+             <!--대전 전지역 키즈 클릭시-->
+            <div class="ftx_box">
+                <div class="ftx">
+                <div class="ftx2">
+                    <p class="ftx2_1">LACOSTE 갤러리아타임월드 키즈</p>
+                    <p class="ftx2_2">대전 서구 대덕대로 211 갤러리아 타임월드 5F 라코스테 키즈</p>
+                    <p class="ftx2_3"><img src="img/here.png"></p>
+                </div>
+            </div>
+            <div class="line1_1"></div>
+            <div class="line1_2"></div>
+        </div>
+        </div>
+
+
+                    <div id="mn4">
+                        <h1>자유게시판</h1>
+                        <div class="mn4_1">
+                            <div class="mn4_1_1">
+                                <img src="img/mn4_img1.png">
+                                <h1>Lacoste x Netflix</h1>
+                                <p>A Special Meeting between <br>Lacoste and Netflix</p>
+                            </div>
+                            <div class="mn4_1_2">
+                                <img src="img/mn4_img2.png">
+                                <h1>네오 헤리티지</h1>
+                                <p>지금 막 입고된 NEW SS23 컬렉션을 만나보세요.</p>
+                            </div>
+                            <div class="mn4_1_3">
+                                <img src="img/mn4_img3.png">
+                                <h1>미니미 컬렉션</h1>
+                                <p>키즈 미니미 아이템으로 우리 가족 패밀리 룩을<br>완성해보세요.</p>
+                            </div>
+                            <div class="mn4_1_4">
+                                <img src="img/mn4_img4.png">
+                                <h1>에센셜 컬렉션</h1>
+                                <p>데일리 패션을 완성하는 머스트해브 아이템</p>
+                            </div>
+                        </div>
+                
+                        <img class="mn4_left" src="img/arrow_3.png">
+                        <img class="mn4_right" src="img/arrow_3.png">
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <img src="img/kakao_logo.png" width="54px">
+            <p class="fo1">LACOSTE KAKAO FRIEND</p>
+            <p class="fo2">라코스테 카카오 플러스 친구가 되시면 다양한 쇼핑정보 및 혜택을<br>
+                받아보실 수 있습니다.</p>
+            <p class="fo3">등록하기</p>
+            <P class="fo4">ABOUT LACOSTE</P>
+            <p class="fo5">라코스테 멤버십</p>
+            <p class="fo6">라코스테 그룹</p>
+            <p class="fo7">라코스테 채용</p>
+            
+            <p class="fo8">라코스테 컬렉션</p>
+            <p class="fo9">남성 POLO</p>
+            <p class="fo10">여성 POLO</p>
+            <p class="fo11">라코스테 키즈</p>
+            <p class="fo12">라코스테 스포츠</p>
+
+            <p class="fo13">도움말 및 연락처</p>
+            <p class="fo14">고객센터</p>
+            <p class="fo15">1588-9619(유로) /080-550-1160(수신자부담)</p>
+            <p class="fo16">라코스테의 고객 센터는 고객님을 위해 주중 오전9시부터 6시까지 운영됩니다.</p>
+            <p class="fo17">1:1 문의하기</p>
+            <p class="fo18">FAQ</p>
+            <P class="fo19"></P>
+            <p class="fo20">(주)동일라코스테  ㅣ 대표이사 홍길동ㅣ서울특별시 동대문구 답십리로 108<br>
+                사업자등록번호 120˙55˙15418 사업자정보확인 ▶ ㅣ 통신판매업신고번호제<br>
+                개인정보관리책임자 : 김창현 CUSTOMER SERVICE TEL1522-2222,CS˙KR＠LACOSTE.COM</p>
+            <p class="fo21">서울보증보험(주) 이행보증보험<br>
+                고객님은 안전거래를 위해 현금등으로 결제 시 결제금액 전액에 대해 저희 쇼핑몰에서 가입한<br>
+                서울보증보험(주)의 이행보증보험 서비스를 이용하실 수 있습니다.</p>
+        </footer>
+    </div>
+</body>
+</html>

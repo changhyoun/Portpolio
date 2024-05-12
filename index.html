@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index_.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/TweenMax.min.js"></script>
+
+    <script src="js/particles.js"></script>
+    <script src="js/index__.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJY8S5YR46"></script>
+
+</head>
+<body>
+    <script>
+      $(document).ready(function(){
+        $('#section3 .content2_bottom_right_box p a, #footer .content:nth-of-type(2) p a').click(function(e){
+            if($(window).width() <= 1000) {
+                e.preventDefault(); // 기본 동작 방지
+                var newLink = $(this).attr('href').replace('index.html', 'index_m.html');
+                window.open(newLink, '_blank');
+            }
+        });
+
+        $('#section3 .content4_bottom_right_box p a, #footer .content:nth-of-type(4) p a').click(function(e){
+            if ($(window).width() <= 1000) {
+                e.preventDefault(); // 기본 동작 방지
+                var newLink = 'move123/html/index_m.html';
+                window.open(newLink, '_blank');
+            }
+        });
+        
+});
+    </script>
+    
+    
+    <div id="container">
+        <!-- <H1 class="scroll">0</H1> -->
+        <a href="../index.html"><div class="logo"></div></a>
+        <a class="menu-trigger" href="html/menu.html">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+      
+        <div id="contentContainer" class="trans3d">
+            <div id="closesumnail">
+            <h6>인트로 닫기</h6>
+            <span class="material-symbols-rounded">
+                cancel
+                </span>
+            </div>
+            <section id="carouselContainer" class="trans3d">
+                <figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_5.png"></div></figure>
+                <figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_2.jpg"></div></figure>
+                <figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_3.png"></div></figure>
+                <figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_4.jpg"></div></figure>
+                <figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_1.jpg"></div></figure>
+                <figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_6.png"></div></figure>
+                <figure id="item7" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_7.png"></div></figure>
+                <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="img/sumnailimg_8.jpg"></div></figure>
+            </section>
+            <p id="myText">10</p>
+
+        </div>
+        
+        <div id="section1">
+            <div id="particles-js">
+                <div class="count-particles">
+                 <span class="js-count-particles">
+            <p></p>
+            <p><span>Hello,</span><br>Applicant, Kim Chang-hyoun</p>
+            <p><span>Infused</span>with passion and determination,<br class="p-br">
+                I am Changhyun Kim. Since making the <span>decisive</span> shift to<br  class="p-br">
+                the realm of <span>web design</span> and <span>publishing</span> in 2022, taking that<br  class="p-br">
+                first step hasn't been an easy journey. My background was in<br  class="p-br">
+                industrial equipment and <span>engineering,</span> so initially,<br  class="p-br">
+                I faced uncertainty about how to begin. However,<br  class="p-br">
+                I resolved not to give up and stayed committed to my path.</p>
+                <p>Scroll down</p>
+                <span class="material-symbols-rounded mouse">mouse</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        <!--여백용-->
+        <div id="section2"></div>
+      
+        <div id="section3">
+           <div id="timer">
+                <div class="circle"></div>
+                <div class="longhand"></div>
+           </div>
+         
+            <div class="content1">
+                <div class="content1_top">
+                    <div class="box1">
+                        <img src="img/spo1.png">
+                        <img src="img/spo2.png">
+                        <img src="img/spo3.png">
+                        <img src="img/spo4,5,11,12.png">
+                        <img src="img/spo4,5,11,12.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/spo6.png">
+                        <img src="img/spo7.png">
+                        <img src="img/spo8.png">
+                        <img src="img/spo9.png">
+                        <img src="img/spo10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/spo4,5,11,12.png">
+                        <img src="img/spo4,5,11,12.png">
+                        <img src="img/spo13.png">
+                        <img src="img/spo14.png">
+                        <img src="img/spo15.png">
+                    </div>
+                </div>
+                <div class="content1_bottom">
+                    <div class="content1_bottom_left">
+                        <div class="content1_bottom_left_box">
+                            <div class="content1_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>Spotify 소개 페이지</p>
+                            </div>
+                            <div class="content1_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content1_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2023.06.21</p>
+                            </div>
+                            <div class="content1_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Music</p>
+                            </div>
+                            <div class="content1_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p>Pc<br>Tablet<br>Handphone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content1_bottom_right">
+                        <img src="img/sumnailimg_1.jpg">
+                        <div class="content1_bottom_right_box">
+                            
+                            <p><a href="spotify/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content2_top">
+                    <div class="box1">
+                        <img src="img/samsung1.png">
+                        <img src="img/samsung2.png">
+                        <img src="img/samsung3.png">
+                        <img src="img/samsung4.png">
+                        <img src="img/samsung5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/samsung6,10.png">
+                        <img src="img/samsung7.png">
+                        <img src="img/samsung8.png">
+                        <img src="img/samsung9.png">
+                        <img src="img/samsung6,10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/samsung11.png">
+                        <img src="img/samsung12.png">
+                        <img src="img/samsung13.png">
+                        <img src="img/samsung14.png">
+                        <img src="img/samsung15.png">
+                    </div>
+                </div>
+                <div class="content2_bottom">
+                    <div class="content2_bottom_left">
+                        <div class="content2_bottom_left_box">
+                            <div class="content2_bottom_left_box_tx1">
+                                <p style="text-align: right;">Title</p>
+                                <p style="text-align: right;">삼성전기 홈페이지<br>
+                                    (Imitation)</p>
+                            </div>
+                            <div class="content2_bottom_left_box_tx2">
+                                <p style="text-align: right;">Maker</p>
+                                <p style="text-align: right;">김창현</p>
+                            </div>
+                            <div class="content2_bottom_left_box_tx3">
+                                <p style="text-align: right;">Creation</p>
+                                <p style="text-align: right;">2024.03.15</p>
+                            </div>
+                            <div class="content2_bottom_left_box_tx4">
+                                <p style="text-align: right;">Industry</p>
+                                <p style="text-align: right;">Company</p>
+                            </div>
+                            <div class="content2_bottom_left_box_tx5">
+                                <p style="text-align: right;">Responive</p>
+                                <p style="text-align: right;">Pc<br>Notebook<br>Tablet<br>Handphone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2_bottom_right">
+                        <img src="img/sumnailimg_samsung.jpg">
+                        <div class="content2_bottom_right_box">
+                            
+                            <p><a href="삼성전기/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="content3_top">
+                    <div class="box1">
+                        <img src="img/neldit1,2,13,14,15.png">
+                        <img src="img/neldit1,2,13,14,15.png">
+                        <img src="img/neldit3.png">
+                        <img src="img/neldit4.png">
+                        <img src="img/neldit5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/neldit6.png">
+                        <img src="img/neldit7.png">
+                        <img src="img/neldit8.png">
+                        <img src="img/neldit9.png">
+                        <img src="img/neldit10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/neldit11.png">
+                        <img src="img/neldit12.png">
+                        <img src="img/neldit1,2,13,14,15.png">
+                        <img src="img/neldit1,2,13,14,15.png">
+                        <img src="img/neldit1,2,13,14,15.png">
+                    </div>
+                </div>
+                <div class="content3_bottom">
+                    <div class="content3_bottom_left">
+                        <div class="content3_bottom_left_box">
+                            <div class="content3_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>NELDIT 홈페이지</p>
+                            </div>
+                            <div class="content3_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content3_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2023.07.18</p>
+                            </div>
+                            <div class="content3_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Company</p>
+                            </div>
+                            <div class="content3_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p>Pc<br>Tablet<br>Handphone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content3_bottom_right">
+                        <img src="img/sumnailimg_2.jpg">
+                        <div class="content3_bottom_right_box">
+                            
+                            <p><a href="낼딧-홈페이지/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content4">
+                <div class="content4_top">
+                    <div class="box1">
+                        <img src="img/move1.png">
+                        <img src="img/move2.png">
+                        <img src="img/move3.png">
+                        <img src="img/move4.png">
+                        <img src="img/move5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/move6.png">
+                        <img src="img/move7.png">
+                        <img src="img/move8.png">
+                        <img src="img/move9.png">
+                        <img src="img/move10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/move11.png">
+                        <img src="img/move12.png">
+                        <img src="img/move13.png">
+                        <img src="img/move14.png">
+                        <img src="img/move15.png">
+                    </div>
+                </div>
+                <div class="content4_bottom">
+                    <div class="content4_bottom_left">
+                        <div class="content4_bottom_left_box">
+                            <div class="content4_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>Move 홈페이지<br>
+                                    (Imitation)</p>
+                            </div>
+                            <div class="content4_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content4_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2024.04.11</p>
+                            </div>
+                            <div class="content4_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Transportation</p>
+                            </div>
+                            <div class="content4_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p>Pc<br>Notebook<br>Tablet<br>Handphone</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content4_bottom_right">
+                        <img src="img/sumnailimg_move.jpg">
+                        <div class="content4_bottom_right_box">
+                            
+                            <p><a href="move123/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content5">
+                <div class="content5_top">
+                    <div class="box1">
+                        <img src="img/충남대병원1.png">
+                        <img src="img/충남대병원2,11,12,15.png">
+                        <img src="img/충남대병원3.png">
+                        <img src="img/충남대병원4.png">
+                        <img src="img/충남대병원5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/충남대병원6.png">
+                        <img src="img/충남대병원7.png">
+                        <img src="img/충남대병원8.png">
+                        <img src="img/충남대병원9.png">
+                        <img src="img/충남대병원10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/충남대병원2,11,12,15.png">
+                        <img src="img/충남대병원2,11,12,15.png">
+                        <img src="img/충남대병원13.png">
+                        <img src="img/충남대병원14.png">
+                        <img src="img/충남대병원2,11,12,15.png">
+                    </div>
+                </div>
+                <div class="content5_bottom">
+                    <div class="content5_bottom_left">
+                        <div class="content5_bottom_left_box">
+                            <div class="content5_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>충남대학교병원 홈페이지</p>
+                            </div>
+                            <div class="content5_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content5_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2023.06.08</p>
+                            </div>
+                            <div class="content5_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Hospital</p>
+                            </div>
+                            <div class="content5_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p style="text-align: right;">pc페이지만<BR>구현되었습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content5_bottom_right">
+                        <img src="img/sumnailimg_4.jpg">
+                        <div class="content5_bottom_right_box">
+                            
+                            <p><a href="충남대학교 병원/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content6">
+                <div class="content6_top">
+                    <div class="box1">
+                        <img src="img/grue1.png">
+                        <img src="img/grue2.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/grue6.png">
+                        <img src="img/grue7.png">
+                        <img src="img/grue8.png">
+                        <img src="img/grue9.png">
+                        <img src="img/grue10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                        <img src="img/grue12.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                        <img src="img/grue3,4,5,11,13,14,15.png">
+                    </div>
+                </div>
+                <div class="content6_bottom">
+                    <div class="content6_bottom_left">
+                        <div class="content6_bottom_left_box">
+                            <div class="content6_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>Grue 홈페이지</p>
+                            </div>
+                            <div class="content6_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content6_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2023.06.12</p>
+                            </div>
+                            <div class="content6_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Construction</p>
+                            </div>
+                            <div class="content6_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p>Pc<br>Tablet<br>Handphone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content6_bottom_right">
+                        <img src="img/sumnailimg_3.png">
+                        <div class="content6_bottom_right_box">
+                            
+                            <p><a href="grue/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content7">
+                <div class="content7_top">
+                    <div class="box1">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                        <img src="img/hansung4.png">
+                        <img src="img/hansung5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/hansung6.png">
+                        <img src="img/hansung7.png">
+                        <img src="img/hansung8.png">
+                        <img src="img/hansung9.png">
+                        <img src="img/hansung10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/hansung11.png">
+                        <img src="img/hansung12.png">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                        <img src="img/hansung1,2,3,13,14,15.png">
+                    </div>
+                </div>
+                <div class="content7_bottom">
+                    <div class="content7_bottom_left">
+                        <div class="content7_bottom_left_box">
+                            <div class="content7_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>한성기업 홈페이지</p>
+                            </div>
+                            <div class="content7_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content7_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2024.03.22</p>
+                            </div>
+                            <div class="content7_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Fishery company</p>
+                            </div>
+                            <div class="content7_bottom_left_box_tx5">
+                                <p>Responive</p>
+                                <p style="text-align: right;">pc페이지만<BR>구현되었습니다.</p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="content7_bottom_right">
+                        <img src="img/sumnailimg_6.png">
+                        <div class="content7_bottom_right_box">
+                            
+                            <p><a href="hansung/index.html" target="_blank">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content8">
+                <div class="content8_top">
+                    <div class="box1">
+                        <img src="img/poster1,5.png">
+                        <img src="img/poster2.png">
+                        <img src="img/poster3.jpg">
+                        <img src="img/poster4.jpg">
+                        <img src="img/poster1,5.png">
+                    </div>
+                    <div class="box2">
+                        <img src="img/poster6.png">
+                        <img src="img/poster7.png">
+                        <img src="img/poster8.png">
+                        <img src="img/poster9.png">
+                        <img src="img/poster10.png">
+                    </div>
+                    <div class="box3">
+                        <img src="img/poster11.png">
+                        <img src="img/poster12.png">
+                        <img src="img/poster13.png">
+                        <img src="img/poster14.png">
+                        <img src="img/poster15.png">
+                    </div>
+                </div>
+                <div class="content8_bottom">
+                    <div class="content8_bottom_left">
+                        <div class="content8_bottom_left_box">
+                            <div class="content8_bottom_left_box_tx1">
+                                <p>Title</p>
+                                <p>포스터, 명함</p>
+                            </div>
+                            <div class="content8_bottom_left_box_tx2">
+                                <p>Maker</p>
+                                <p>김창현</p>
+                            </div>
+                            <div class="content8_bottom_left_box_tx3">
+                                <p>Creation</p>
+                                <p>2022.09.10</p>
+                            </div>
+                            <div class="content8_bottom_left_box_tx4">
+                                <p>Industry</p>
+                                <p>Poster, Card</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="content8_bottom_right">
+                        <img src="img/sumnailimg_8.jpg">
+                        <div class="content8_bottom_right_box">
+                            <p><a href="html/content5.html">홈페이지<span class="material-symbols-rounded">left_click</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div id="section4">
+            <div class="section4_tie">
+                <p>KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO
+                    KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO
+                    KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO
+                    KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO KIM CHANG HYOUN-PORTPOLIO
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="content1">
+                <p>copyright @ 2023 김창현. all rights reserved</p>
+            </div>
+            <div class="content2">
+                <div class="box1">
+                    <p>Tel.</p>
+                    <p>010.6636.5780</p>
+                </div>
+                <div class="box2">
+                    <p>kakaotalk.</p>
+                    <p>kch5780</p>
+                </div>
+                <div class="box3">
+                    <p>Instagram.</p>
+                    <p>_chxxhny</p>
+                </div>
+                <div class="box4">
+                    <p>E-mail.</p>
+                    <p>llh94367@naver.com</p>
+                </div>
+            </div>
+            <div class="content3">
+                <p>Quick Site</p>
+                <p><a href="spotify/index.html" target="_blank">Spotify</a></p>
+                <p><a href="삼성전기/index.html" target="_blank">삼성전기</a></p>
+                <p><a href="낼딧-홈페이지/index.html" target="_blank">Neldit</a></p>
+                <p><a href="move123/index.html"_blank">Move</a></p>
+                <p><a href="충남대학교 병원/index.html" target="_blank">충남대학교병원</a></p>
+                <p><a href="grue/index.html" target="_blank">Grue</a></p>
+                <p><a href="hansung/index.html" target="_blank">한성기업</a></p>
+                
+                <p><a href="html/content5.html" target="_blank">Poster & Business card</a></p>
+            </div>
+            
+        </div>
+    </div>
+      
+</body>
+</html>
